@@ -1,0 +1,155 @@
+/*
+Theme Name: Herencias 
+Theme URI: Herencias.com
+Description: Description
+Version: 1.0
+Author: Eddie Jude 
+Author URI: http://example.com/
+Tags: one, two
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: 'Raleway','Assistant','Roboto', sans-serif;  
+	overflow-x: hidden;
+	color: #242424;
+}
+ul li a {
+	text-decoration: none; 
+}
+.site-header {
+	background-color: red;
+	top: 15vw;
+	left: 0;
+	width: 100%;
+	border-bottom: 10px solid #945779;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding: 30px 0 0 0;
+}
+.site-header h1 a {
+	font-weight: 300;
+	font-size: 3rem;
+	opacity: .8;
+	color: black;
+	position: relative;
+	top: 0px;
+	padding: 10px; 
+}
+.site-header h5 {
+	color: black;
+	font-weight: 300;
+	font-size: 1rem;
+	opacity: .8;
+	padding: 10px;
+}
+.wrapper {
+	padding-left: 40px;
+	padding-right: 40px;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+/* Primary Nav Menu */
+.site-nav a {
+	color: black;
+
+}
+.site-nav a:hover {
+	color: ;
+}
+.site-nav ul {
+	position: absolute;
+	top: 13%;
+	right: 5%;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 100%;
+	color: black;
+}
+.site-nav li { 
+	float: right;
+	display: block;
+	text-align: left;
+	padding-right: 20px;
+	position: relative;
+	top: 25%;
+}
+/*@import "modules/flexslider";*/
+.site-footer {
+	display: block; 
+	background-color: black;
+	position: absolute;
+	padding: .5rem 0; /* so that the margin on the paragraph isn't visibly portruding out of the container div */ 
+	width: 100%;
+	}
+.site-footer a {
+	color: #FFF;
+	position: relative;
+	left: 30px;
+}
+.site-nav-footer {
+	color: #FFF;
+	font-size: 0.8rem;
+	padding: 5px;
+	line-height: 20px;
+}
+/*.site-footer h5 {
+	color: #FFF;
+	font-size: 0.9rem;
+	position: relative;
+	left: 5%;
+}*/
+.hd-search {
+	position: absolute;
+	top: 20%;
+	left: 20vw;
+}
+.blog-info p {
+	color: #FFF;
+}
+
+

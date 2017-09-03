@@ -1,0 +1,28 @@
+/* Primary Nav Menu */
+.site-nav a {
+	color: black;
+
+		&:hover {
+		color: ;
+}
+
+}
+.site-nav ul {
+	position: absolute;
+	top: 13%;
+	right: 5%;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	width: 100%;
+	color: black;
+}
+
+.site-nav li { 
+	float: right;
+	display: block;
+	text-align: left;
+	padding-right: 20px;
+	position: relative;
+	top: 25%;
+}
