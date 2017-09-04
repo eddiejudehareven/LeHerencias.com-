@@ -23,9 +23,10 @@ get_header(); ?>
 
 		</div><!-- /main-column -->
 
+		</div><!-- /site-content -->
+
 		<?php get_sidebar(); ?>
 		
-	</div><!-- /site-content -->
 	
 	<?php get_footer();
 

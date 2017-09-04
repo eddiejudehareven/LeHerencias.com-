@@ -8,6 +8,7 @@ Author URI: http://example.com/
 Tags: one, two
 */
 @import "modules/variables";
+@import "modules/mixins";
 @import "modules/reset";
 @import "modules/custom";
 @import "modules/global";
@@ -17,5 +18,7 @@ Tags: one, two
 @import "modules/frontpage";
 /*@import "modules/flexslider";*/
 @import "modules/footer";
+@import "modules/post";
+@import "modules/site-content";
 
 

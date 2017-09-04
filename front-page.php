@@ -11,7 +11,7 @@ get_header(); ?>
 
 				while (have_posts()) : the_post();
 
-				get_template_part('content', 'page');
+				the_content(); 
 
 				endwhile;
 
@@ -22,8 +22,8 @@ get_header(); ?>
 				<!-- home page columns --> 
 				<div class="home-page-columns clearfix">
 				
-				<!-- columns one -->
-				<div class="column-one">
+					<!-- columns one -->
+				<div class="home-main-column">
 
 				<?php 
 
@@ -48,52 +48,18 @@ get_header(); ?>
 				</div> <!-- column one -->
 
 				<!-- column two -->
-				<div class="column-two">
-				<?php 
-					// Events column loop begins here
+				<div class="home-column-two">
 
-							$eventsColumn = new WP_Query('events=2&posts_per_page=2');
-
-						if ($eventsColumn->have_posts()) :
-
-							while ($eventsColumn->have_posts()) : $eventsColumn->the_post(); ?>
-
-							<h2><?php the_title(); ?></h2>	
-
-							<?php endwhile;
-
-							else : 
-
-							// non content msg here
-
-							endif;
-							wp_reset_postdata(); // put after every WP Query ?>
+					<h2><?php the_permalink(); ?></h2>	
 
 				</div><!-- column two -->
 
 				<!-- column three --> 
-				<div class="column-three">
-				<?php 
-				// third column loop begins here 
+				<div class="home-column-three"> 
 
-							$thirdColumn = new WP_Query('events=2&posts_per_page=2');
-
-						if ($thirdColumn->have_posts()) :
-
-							while ($thirdColumn->have_posts()) : $thirdColumn->the_post(); ?>
-
-							<h2><?php the_title(); ?></h2>	
+							<h2><?php the_permalink(); ?></h2>	
 
 							<!-- if wanting a link: use a href with permalink php --> 
-
-							<?php endwhile;
-
-							else : 
-
-							// non content msg here
-
-							endif;
-							wp_reset_postdata(); // put after every WP Query ?>
 
 					</div><!-- column three -->
 					

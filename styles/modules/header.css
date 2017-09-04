@@ -1,12 +1,8 @@
 .site-header {
-	background-color: red;
-	top: 15vw;
-	left: 0;
+	background-color: $mainRed;
 	width: 100%;
-	border-bottom: 10px solid #945779;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	padding: 30px 0 0 0;
+	border-bottom: 5px solid #242424;
+	padding: 5px 0 0 0;
 }
 
 .site-header h1 a {
@@ -25,4 +21,9 @@
 	font-size: 1rem;
 	opacity: .8;
 	padding: 10px;
+}
+
+.site-header h1 a:link,
+.site-header h1 a:visited {
+	text-decoration: none;
 }
