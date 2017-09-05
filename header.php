@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width"> <!-- responsiveness -->
 		<title><?php bloginfo('name'); ?></title>
 		<?php wp_head(); ?> <!-- wp plugins --> 
-	</head>
-	
+	</head>	
+
+
 <body <?php body_class(); ?>> <!-- to target css easily -->
 	
 		<!-- site-header -->
@@ -22,7 +23,7 @@
 				<?php
 				
 				$args = array(
-					'menu' => 'hua'
+					'menu' => 'primary'
 				);
 				
 				?>
@@ -30,4 +31,3 @@
 				<?php wp_nav_menu(  $args ); ?>
 			</nav>
 			
-			<img src="<?php echo get_template_directory_uri(); ?>/images/image.jpg" alt='ncr.com'>

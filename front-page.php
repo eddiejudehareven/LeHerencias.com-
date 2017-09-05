@@ -1,31 +1,29 @@
 <?php
 
 get_header(); ?>
-	
-	<!-- site-content -->
-	<div class="site-content clearfix">
-		
-			<h3>WELCOME</h3>
 
-			<?php if (have_posts()) :
+<!-- home page columns --> 
+	<div class="wrapper clearfix">
 
-				while (have_posts()) : the_post();
+	<h3>WELCOME</h3>
 
-				the_content(); 
+	<?php if (have_posts()) :
 
-				endwhile;
+	while (have_posts()) : the_post();
 
-				else :
-					echo '<p>No content found</p>';
+	the_content(); 
 
-				endif;  ?>
-				<!-- home page columns --> 
-				<div class="home-page-columns clearfix">
-				
-					<!-- columns one -->
-				<div class="home-main-column">
+	endwhile;
 
-				<?php 
+	else :
+		echo '<p>No content found</p>';
+
+	endif;  ?>
+
+		<!-- columns one -->
+		<div class="home-column-one">
+
+			<?php 
 
 					// new column loop begins here
 						$newsColumn = new WP_Query('news=55&posts_per_page=2'); // change page ID for each loop
@@ -34,16 +32,16 @@ get_header(); ?>
 
 							while ($newsColumn->have_posts()) : $newsColumn->the_post(); ?>
 
-							<h2><?php the_title(); ?></h2>	
+						<h2><?php the_title(); ?></h2>	
 
-							<?php endwhile;
+					<?php endwhile;
 
-							else : 
+					else : 
 
 							// non content msg here
 
-							endif;
-							wp_reset_postdata(); // put after every WP Query ?>
+						endif;
+					wp_reset_postdata(); // put after every WP Query ?>
 					
 				</div> <!-- column one -->
 
@@ -57,14 +55,13 @@ get_header(); ?>
 				<!-- column three --> 
 				<div class="home-column-three"> 
 
-							<h2><?php the_permalink(); ?></h2>	
+					<h2><?php the_permalink(); ?></h2>	
 
-							<!-- if wanting a link: use a href with permalink php --> 
+					<!-- if wanting a link: use a href with permalink php --> 
 
-					</div><!-- column three -->
-					
+				</div><!-- column three -->
 
-				</div> <!-- home page columns -->
+			</div> <!-- home page columns -->
 
-<?php get_footer( );
-?>
+			<?php get_footer( );
+			?>

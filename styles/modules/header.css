@@ -15,15 +15,15 @@
 	padding: 10px; 
 }
 
+.site-header h1 a:link,
+.site-header h1 a:visited {
+	text-decoration: none;
+}
+
 .site-header h5 {
 	color: black;
 	font-weight: 300;
 	font-size: 1rem;
 	opacity: .8;
 	padding: 10px;
-}
-
-.site-header h1 a:link,
-.site-header h1 a:visited {
-	text-decoration: none;
 }

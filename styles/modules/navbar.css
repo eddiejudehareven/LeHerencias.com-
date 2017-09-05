@@ -1,10 +1,19 @@
 /* Primary Nav Menu */
+.site-nav nav {
+	margin-top: 30px;
+}
 .site-nav a {
 	color: black;
 
 		&:hover {
 		color: white;
 }
+
+/*.site-nav ul li a:link, 
+.site-nav li a:active {
+	text-decoration: underline;
+	color: #FFF; 
+}*/
 
 }
 .site-nav ul {

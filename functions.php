@@ -11,12 +11,16 @@ function addAssets() { // resources: any css or js files //
 // in this case, we fire our custom function addAssets on the wp_enqueue_scripts hook (which fires when user loads page)
 add_action('wp_enqueue_scripts', 'addAssets');
 
+//Fonts
 function wpb_add_google_fonts() {
  
 wp_enqueue_style( 'wpb-google-fonts', "https://fonts.googleapis.com/css?family=Raleway|Assistant", false ); // add link to font you want
 }
  
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+//404 Not Found 
+get_search_form('echo', 'string');
 
 // // Create Slider Post Type
 // require( get_template_directory() . './slider_post_type.php' );

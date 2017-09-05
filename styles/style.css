@@ -10,15 +10,13 @@ Tags: one, two
 @import "modules/variables";
 @import "modules/mixins";
 @import "modules/reset";
-@import "modules/custom";
 @import "modules/global";
-@import "modules/header";
 @import "modules/wrapper";
+@import "modules/header";
 @import "modules/navbar";
 @import "modules/frontpage";
 /*@import "modules/flexslider";*/
 @import "modules/footer";
-@import "modules/post";
 @import "modules/site-content";
 
 

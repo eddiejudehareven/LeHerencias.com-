@@ -3,14 +3,14 @@
 get_header(); ?>
 	
 	<!-- site-content -->
-	<div class="site-content clearfix">
+	<div class="wrapper clearfix">
 		
 		<!-- main-column -->
 		<div class="post-main-column">
 			<?php if (have_posts()) :
 				while (have_posts()) : the_post();
 
-				get_template_part('content', 'page');
+				get_template_part('content','page');
 
 				endwhile;
 

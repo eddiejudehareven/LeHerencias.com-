@@ -4,7 +4,8 @@ get_header(); ?>
 	
 	<!-- site-content -->
 	<div class="site-content clearfix">
-		
+	<!-- wrapper -->
+		<div class="wrapper">
 		<!-- main-column -->
 		<div class="main-column">
 
@@ -24,6 +25,8 @@ get_header(); ?>
 		</div><!-- /main-column -->
 
 		</div><!-- /site-content -->
+
+		</div> <!-- wrapper --> 
 
 		<?php get_sidebar(); ?>
 		

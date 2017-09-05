@@ -1,4 +1,5 @@
-	<!-- repeated content so we can call it from other pages without having to rewrite the code --> 
+	<!-- repeated content so we can call it from other pages without having to rewrite the code -->
+	 
 	<!-- only if post has thumbnail then use .has-thumbnail class styling --> 
 	<article class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
 
