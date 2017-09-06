@@ -1,12 +1,14 @@
 /* Primary Nav Menu */
-.site-nav nav {
-	margin-top: 30px;
+.site-nav {
+	border-bottom: 5px solid $mainRed;
 }
 .site-nav a {
+	/*padding: 30px;
+	margin: 20px 0 20px 0;*/
 	color: black;
 
 		&:hover {
-		color: white;
+		color: $mainRed;
 }
 
 /*.site-nav ul li a:link, 
@@ -18,20 +20,19 @@
 }
 .site-nav ul {
 	position: absolute;
-	top: 13%;
-	right: 5%;
-	margin: 0;
-	padding: 0;
-	height: 30px;
+	top: 20%;
+	left: 25%;
 	width: 100%;
 	color: black;
+	padding: 10px; /* space between ul and header */ 
+	margin: 20px 0 20px 0; /* space between ul and h1 */ 
 }
 
 .site-nav li { 
-	float: right;
+	float: left;
 	display: block;
 	text-align: left;
-	padding-right: 20px;
-	position: relative;
-	top: 25%;
+	padding-right: 40px; /* space between list items */ 
+	/*position: relative;
+	top: 50%;*/
 }

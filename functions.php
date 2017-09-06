@@ -19,10 +19,11 @@ wp_enqueue_style( 'wpb-google-fonts', "https://fonts.googleapis.com/css?family=R
  
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
-//404 Not Found 
-get_search_form('echo', 'string');
+// //404 Not Found 
+// get_search_form('echo', 'string');
 
-// // Create Slider Post Type
-// require( get_template_directory() . './slider_post_type.php' );
+// // // Create Slider Post Type
+// require( get_template_directory() . '/slider/slider_post_type.php' );
 // // Create Slider
-// require( get_template_directory() . './slider.php' );
+// require( get_template_directory() . '/slider/slider.php' );
+

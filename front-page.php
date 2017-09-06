@@ -2,10 +2,12 @@
 
 get_header(); ?>
 
+<?php 
+    echo do_shortcode("[metaslider id=43]"); 
+?>
+
 <!-- home page columns --> 
 	<div class="wrapper clearfix">
-
-	<h3>WELCOME</h3>
 
 	<?php if (have_posts()) :
 

@@ -15,7 +15,7 @@ Tags: one, two
 @import "modules/header";
 @import "modules/navbar";
 @import "modules/frontpage";
-/*@import "modules/flexslider";*/
+@import "flexslider";
 @import "modules/footer";
 @import "modules/site-content";
 
