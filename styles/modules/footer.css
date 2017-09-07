@@ -4,29 +4,32 @@
 	padding: .5rem 0; /* so that the margin on the paragraph isn't visibly portruding out of the container div */ 
 	/*width: 100%;
 	}*/
-/*
-.site-footer nav {
-	color: #FFF;
-	font-size: 0.8rem;
-	margin: 10px 10px 10px 10px; 
-	line-height: 20px;
+
+.site-footer {
+	overflow: hidden;
+	width: 100%;
+	padding: .5rem 0;
 }
 
-.site-footer nav ul li a {
-	color: #FFF;
-	margin-right: 10px;
+.site-footer nav ul li {
+	float: right;
+	margin-right: 5px;
 	padding-right: 10px;
-	border-right: 1px solid #FFF;
+	border-right: 1px solid black;
 }
 
-.site-footer nav ul li:last-of-type {
+.site-footer nav ul li:first-of-type {
 	border-right: none;
 }
 
-div.hd-search {
+.site-footer span {
+	color: $mainRed; 
 	float: right;
+	margin-right: 5px;
+	padding-right: 10px;
+	border-right: 1px solid black;
 }
 
-.blog-info p {
-	color: #FFF;
-}*/
+	/*div.hd-search {
+		float: right;
+	}*/

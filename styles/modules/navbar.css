@@ -1,7 +1,8 @@
 /* Primary Nav Menu */
 .site-nav {
-	border-bottom: 5px solid $mainRed;
+	border-top: 4px solid $mainRed;
 }
+
 .site-nav a {
 	/*padding: 30px;
 	margin: 20px 0 20px 0;*/
@@ -9,23 +10,26 @@
 
 		&:hover {
 		color: $mainRed;
+	}
 }
 
-/*.site-nav ul li a:link, 
-.site-nav li a:active {
-	text-decoration: underline;
-	color: #FFF; 
+.site-nav nav ul li a {
+	color: black;
+}
+
+/*a:link {
+	color: black;
+}
+nav ul li a:active {
+	color: $mainRed;
 }*/
 
-}
 .site-nav ul {
 	position: absolute;
 	top: 20%;
 	left: 25%;
 	width: 100%;
-	color: black;
-	padding: 10px; /* space between ul and header */ 
-	margin: 20px 0 20px 0; /* space between ul and h1 */ 
+	padding-top: 40px; /* space between ul and header */ 
 }
 
 .site-nav li { 

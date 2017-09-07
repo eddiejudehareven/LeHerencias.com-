@@ -15,8 +15,11 @@ Tags: one, two
 @import "modules/header";
 @import "modules/navbar";
 @import "modules/frontpage";
-@import "flexslider";
 @import "modules/footer";
 @import "modules/site-content";
+@import "modules/metaslider";
+@import "modules/columns";
+@import "modules/btn";
+@import "modules/searchform";
 
 

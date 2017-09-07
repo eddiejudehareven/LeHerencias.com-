@@ -6,18 +6,13 @@
 			<?php
 			
 			$args = array(
-				'menu' => 'footer'
+				'menu' => 'footer menu'
 			);
 			
 			?>
 			
 			<?php wp_nav_menu(  $args ); ?>
-			
-
-				<!-- hd-search -->
-			<div class="hd-search">
-				<?php get_search_form(); ?>
-			</div><!-- /hd-search -->
+		
 
 		</nav>
 		

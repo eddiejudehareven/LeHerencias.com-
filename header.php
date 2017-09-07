@@ -18,12 +18,17 @@
 
 			</header><!-- /site-header -->
 			
+			<!-- hd-search -->
+			<div class="hd-search">
+				<?php get_search_form(); ?>
+			</div><!-- /hd-search --> 
+
 			<nav class="site-nav">
 				
 				<?php
 				
 				$args = array(
-					'menu' => 'primary'
+					'menu' => 'primary menu'
 				);
 				
 				?>

@@ -2,12 +2,14 @@
 
 get_header(); ?>
 
-<?php 
-    echo do_shortcode("[metaslider id=43]"); 
-?>
+<div id="metaslider">
+	<?php 
+	echo do_shortcode("[metaslider id=43]"); 
+	?>
+</div>
 
-<!-- home page columns --> 
-	<div class="wrapper clearfix">
+<!-- wrapper --> 
+<div class="wrapper clearfix">
 
 	<?php if (have_posts()) :
 
@@ -22,48 +24,39 @@ get_header(); ?>
 
 	endif;  ?>
 
-		<!-- columns one -->
-		<div class="home-column-one">
+	<!-- grid container -->
+	<div class="grid-container">
 
-			<?php 
+		<!-- row --> 
+		<div class="row">
+			<div id="front-page-block" class="front-page-section">
+				<!-- column one --> 
+				<div class="column-left">
+					<h2><a href="#" class="btn">Professional Production</a></h2>
+				</div> <!-- front page section --> 
+			</div> <!-- row --> 
+		</div> <!-- column one --> 
 
-					// new column loop begins here
-						$newsColumn = new WP_Query('news=55&posts_per_page=2'); // change page ID for each loop
+		<!-- row --> 
+		<div class="row">
+			<!-- column two -->
+			<div class="column-right">
+				<h2><a href="#" class="btn">Community Engagement</a></h2>
+				<img src="herencias/images/front-page2.jpg">
+			</div> <!-- column two --> 
+		</div> <!-- row --> 
 
-						if ($newsColumn->have_posts()) :
+		<div class="row">
+			<!-- column three -->
+			<div class="column-center">
+			<h2><a href="#" class="btn">Advocacy and Consultation</a></h2>
+			</div> <!-- row -->
+			
+		</div> <!-- column three --> 
 
-							while ($newsColumn->have_posts()) : $newsColumn->the_post(); ?>
+	</div> <!-- grid container -->
 
-						<h2><?php the_title(); ?></h2>	
+	</div> <!-- wrapper -->
 
-					<?php endwhile;
-
-					else : 
-
-							// non content msg here
-
-						endif;
-					wp_reset_postdata(); // put after every WP Query ?>
-					
-				</div> <!-- column one -->
-
-				<!-- column two -->
-				<div class="home-column-two">
-
-					<h2><?php the_permalink(); ?></h2>	
-
-				</div><!-- column two -->
-
-				<!-- column three --> 
-				<div class="home-column-three"> 
-
-					<h2><?php the_permalink(); ?></h2>	
-
-					<!-- if wanting a link: use a href with permalink php --> 
-
-				</div><!-- column three -->
-
-			</div> <!-- home page columns -->
-
-			<?php get_footer( );
-			?>
+	<?php get_footer( );
+	?>

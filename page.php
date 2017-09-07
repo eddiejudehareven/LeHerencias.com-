@@ -2,7 +2,7 @@
 
 get_header(); ?>
 	
-	<!-- site-content -->
+	<!-- wrapper -->
 	<div class="wrapper clearfix">
 		
 		<!-- main-column -->
@@ -22,7 +22,7 @@ get_header(); ?>
 		</div><!-- /main-column -->
 
 		
-	</div><!-- /site-content -->
+	</div><!-- /wrapper -->
 
 	<div class="">
 	
