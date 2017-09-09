@@ -5,23 +5,32 @@
 .grid-container *{
         box-sizing: border-box; 
     }
-
-/*-- our cleafix hack -- */ 
-  /*  .row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;*/
- /*   }*/
-/*[class*='three-column-grid'] {
+    
+/* columns for pages */ 
+.two-col-left {  
 	float: left;
-	min-height: 1px;
-	width: 33.3%;    
-}*/
+	width: 66.66%;
+}
 
-.column-left{ float: left; width: 33%; }
-.column-right{ float: right; width: 33%; border-left: 1px solid black; }
-.column-center{ display: inline-block; width: 33%; border-left: 1px solid black; }
+.two-col-right {
+	float: right;
+	width: 33.33%;
+}
+/* Columns for Front Page */ 
+.column-left{ 
+	float: left; 
+	width: 33%; 
+}
+.column-right{ 
+	float: right; 
+	width: 33%; 
+	border-left: 1px solid black;
+}
+.column-center{ 
+	display: inline-block; 
+	width: 33%; 
+	border-left: 1px solid black; 
+}
 
 /*.row {
 	float: right; 

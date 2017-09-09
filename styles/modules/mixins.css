@@ -16,18 +16,8 @@
 	}
 }
 
-@define-mixin clearfix {
-
-	&::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-
 @define-mixin atLandscape {
 	@media (min-height: 400px){
 		@mixin-content; 
 	}
-}
-
 }

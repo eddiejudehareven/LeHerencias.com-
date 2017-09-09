@@ -4,9 +4,9 @@ get_header(); ?>
 	
 	<!-- wrapper -->
 	<div class="wrapper clearfix">
-		
-		<!-- main-column -->
-		<div class="post-main-column">
+		<div id="page" class="gutters">
+		<!-- left column -->
+		<div class="two-col-left">
 			<?php if (have_posts()) :
 				while (have_posts()) : the_post();
 
@@ -19,12 +19,16 @@ get_header(); ?>
 
 				endif;
 				?>
-		</div><!-- /main-column -->
+		</div><!-- left column -->
 
-		
+		<!-- right column --> 
+		<div class="two-col-right">
+		<?php get_sidebar(); ?>
+		</div> <!-- right column --> 
+
+		</div> <!-- page -->
+
 	</div><!-- /wrapper -->
-
-	<div class="">
 	
 	<?php get_footer();
 

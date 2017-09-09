@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="grid-container">
 
 		<!-- row --> 
-		<div class="row">
+		<div class="row gutters">
 			<div id="front-page-block" class="front-page-section">
 				<!-- column one --> 
 				<div class="column-left">

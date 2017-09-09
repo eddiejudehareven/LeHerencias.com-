@@ -92,19 +92,20 @@ p {
 .site-header {
 	background-color: ;
 	width: 100%;
-	padding: 50px;
-	margin-bottom: 30px;
+	/*padding: 50px;*/
+	margin-bottom: 80px; 
 }
 .site-header h1 a {
 	font-weight: 300;
 	font-size: 5rem;
 	text-align: center;
 	opacity: .8;
+	letter-spacing: 10px;
 	color: black;
-	position: absolute;
-    top: 5%;
-    left: 30%;
-    /*transform: translateX(-50%) translateY(-50%); */
+	position: relative;
+	top: 10px;
+    left: 25%;
+    right: 25%; 
 	/*padding: 10px;*/
 	margin: 20px 0 20px 0;
 }
@@ -142,10 +143,10 @@ nav ul li a:active {
 }*/
 .site-nav ul {
 	position: absolute;
-	top: 20%;
-	left: 25%;
+	left: 23vw;
+	top: 15vh;
 	width: 100%;
-	padding-top: 40px; /* space between ul and header */ 
+	padding-top: 40px; /* space between UL and Header */ 
 }
 .site-nav li { 
 	float: left;
@@ -171,58 +172,36 @@ h3 {
 	}*/
 .site-footer {
 	overflow: hidden;
+	margin: 30px;
 	width: 100%;
 	padding: .5rem 0;
 }
 .site-footer nav ul li {
-	float: right;
+	float: left;
+	position: relative;
+	left: 5vw;
+	top: 10px;
 	margin-right: 5px;
 	padding-right: 10px;
+	margin-bottom: 10px;
 	border-right: 1px solid black;
 }
-.site-footer nav ul li:first-of-type {
+/*.site-footer nav ul li:first-of-type {
 	border-right: none;
-}
+}*/
 .site-footer span {
 	color: #91191c; 
-	float: right;
+	float: left;
+	position: relative;
+	left: 15vw;
+	bottom: 5px;
 	margin-right: 5px;
 	padding-right: 10px;
-	border-right: 1px solid black;
+	padding-bottom: 10px;
 }
 /*div.hd-search {
 		float: right;
 	}*/
-/* Main Column */
-.main-column {
-	width: 66%;
-	float: left;
-}
-/* Side Column */
-.side-column {
-	width: 25%;
-	height: 100%;
-	float: right;
-	position: absolute;
-	top: 35%; 
-	right: 2%;
-	background-color: #945779;
-	opacity: .8;
-	padding: 10px 1.8125rem 1px 1.8125rem;
-	border-radius: 10px;
-	margin-bottom: 20px;
-}
-.side-column li {
-	color: #242424;
-}
-.site-content h2 {
-	font-size: 20px;
-	padding: 10px 0 10px 0;
-}
-.site-content h5 {
-	padding: 0 0 10px 0;
-	font-size: 13px;
-}
 .metaslider {
 	border-bottom: 4px solid #91191c; 
 }
@@ -233,21 +212,30 @@ h3 {
 .grid-container *{
         box-sizing: border-box; 
     }
-/*-- our cleafix hack -- */
-/*  .row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;*/
-/*   }*/
-/*[class*='three-column-grid'] {
+/* columns for pages */
+.two-col-left {  
 	float: left;
-	min-height: 1px;
-	width: 33.3%;    
-}*/
-.column-left{ float: left; width: 33%; }
-.column-right{ float: right; width: 33%; border-left: 1px solid black; }
-.column-center{ display: inline-block; width: 33%; border-left: 1px solid black; }
+	width: 66.66%;
+}
+.two-col-right {
+	float: right;
+	width: 33.33%;
+}
+/* Columns for Front Page */
+.column-left{ 
+	float: left; 
+	width: 33%; 
+}
+.column-right{ 
+	float: right; 
+	width: 33%; 
+	border-left: 1px solid black;
+}
+.column-center{ 
+	display: inline-block; 
+	width: 33%; 
+	border-left: 1px solid black; 
+}
 /*.row {
 	float: right; 
 }*/
@@ -271,5 +259,68 @@ width: 33.3%;
 	display: inline-block;
 	border-radius: 30px;
 }*/
+.hd-search {
+	float: left;
+}
+.hd-search #searchform {
+position: absolute;
+top: 3vh;
+left: 5vw;
+}
+.hd-search label {
+ position: absolute;
+ left: -9999px;
+}
+.hd-search #s {
+	height: 30px;
+	width: 150px;
+	border: none;
+	border: 1px solid grey;
+	border-radius: 1rem;
+	opacity: .3;
+
+}
+.hd-search #searchsubmit {
+
+}
+.fa-search {
+	position: absolute;
+	top: 27px;
+	left: 180px;
+	-webkit-transform: rotate(100deg);
+	        transform: rotate(100deg);
+}
+#social-media-icons a {
+	color: black; 
+	cursor: pointer;
+	font-size: 1.1rem;
+	letter-spacing: 5px;
+
+}
+#social-media-icons a:hover {
+	color: #91191c;
+}
+.social-media-icons-header {
+	position: relative;
+	top: 3vh;
+	left: 85vw;
+}
+.social-media-icons-footer {
+	position: relative;
+	left: 65vw;
+}
+#page { /* add margin between page sections */
+	padding: 1rem 0;
+}
+.gutters {
+	margin-right: -30px;
+}
+/* Content Area */
+article.post a {
+	text-decoration: none;
+}
+article.post:last-of-type {
+	border-bottom: none;
+}
 
 

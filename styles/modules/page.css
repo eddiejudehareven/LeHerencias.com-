@@ -1,0 +1,16 @@
+#page { /* add margin between page sections */
+	padding: 1rem 0;
+}
+
+.gutters {
+	margin-right: -30px;
+}
+
+/* Content Area */
+article.post a {
+	text-decoration: none;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}

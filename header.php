@@ -12,6 +12,15 @@
 	
 		<!-- site-header -->
 		<header class="site-header">
+
+		<!--outputs AF icon-->
+	<div id="social-media-icons" class="social-media-icons-header">
+	<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+	</div>
+	<!-- outputs AF icon --> 
 			
 			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 			<h5><?php bloginfo('description'); ?></h5> 
@@ -20,7 +29,8 @@
 			
 			<!-- hd-search -->
 			<div class="hd-search">
-				<?php get_search_form(); ?>
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<?php get_search_form(); ?>
 			</div><!-- /hd-search --> 
 
 			<nav class="site-nav">

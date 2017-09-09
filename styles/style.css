@@ -16,10 +16,11 @@ Tags: one, two
 @import "modules/navbar";
 @import "modules/frontpage";
 @import "modules/footer";
-@import "modules/site-content";
 @import "modules/metaslider";
 @import "modules/columns";
 @import "modules/btn";
 @import "modules/searchform";
+@import "modules/icons";
+@import "modules/page";
 
 

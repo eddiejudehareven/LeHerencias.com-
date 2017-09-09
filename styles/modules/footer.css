@@ -7,27 +7,35 @@
 
 .site-footer {
 	overflow: hidden;
+	margin: 30px;
 	width: 100%;
 	padding: .5rem 0;
 }
 
 .site-footer nav ul li {
-	float: right;
+	float: left;
+	position: relative;
+	left: 5vw;
+	top: 10px;
 	margin-right: 5px;
 	padding-right: 10px;
+	margin-bottom: 10px;
 	border-right: 1px solid black;
 }
 
-.site-footer nav ul li:first-of-type {
+/*.site-footer nav ul li:first-of-type {
 	border-right: none;
-}
+}*/
 
 .site-footer span {
 	color: $mainRed; 
-	float: right;
+	float: left;
+	position: relative;
+	left: 15vw;
+	bottom: 5px;
 	margin-right: 5px;
 	padding-right: 10px;
-	border-right: 1px solid black;
+	padding-bottom: 10px;
 }
 
 	/*div.hd-search {

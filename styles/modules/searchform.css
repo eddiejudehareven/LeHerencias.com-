@@ -1,0 +1,35 @@
+.hd-search {
+	float: left;
+}
+
+.hd-search #searchform {
+position: absolute;
+top: 3vh;
+left: 5vw;
+}
+
+.hd-search label {
+ position: absolute;
+ left: -9999px;
+}
+
+.hd-search #s {
+	height: 30px;
+	width: 150px;
+	border: none;
+	border: 1px solid grey;
+	border-radius: 1rem;
+	opacity: .3;
+
+}
+
+.hd-search #searchsubmit {
+
+}
+
+.fa-search {
+	position: absolute;
+	top: 27px;
+	left: 180px;
+	transform: rotate(100deg);
+}

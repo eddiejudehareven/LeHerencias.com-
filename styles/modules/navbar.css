@@ -3,6 +3,8 @@
 	border-top: 4px solid $mainRed;
 }
 
+
+
 .site-nav a {
 	/*padding: 30px;
 	margin: 20px 0 20px 0;*/
@@ -26,10 +28,10 @@ nav ul li a:active {
 
 .site-nav ul {
 	position: absolute;
-	top: 20%;
-	left: 25%;
+	left: 23vw;
+	top: 15vh;
 	width: 100%;
-	padding-top: 40px; /* space between ul and header */ 
+	padding-top: 40px; /* space between UL and Header */ 
 }
 
 .site-nav li { 
@@ -40,3 +42,4 @@ nav ul li a:active {
 	/*position: relative;
 	top: 50%;*/
 }
+
