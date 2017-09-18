@@ -10,7 +10,7 @@ get_header(); ?>
 			<?php if (have_posts()) :
 				while (have_posts()) : the_post();
 
-				get_template_part('content','page');
+				get_template_part('content-page','page');
 
 				endwhile;
 
@@ -23,7 +23,7 @@ get_header(); ?>
 
 		<!-- right column --> 
 		<div class="two-col-right">
-		<?php get_sidebar(); ?>
+		<!-- <?php get_sidebar(); ?> -->
 		</div> <!-- right column --> 
 
 		</div> <!-- page -->

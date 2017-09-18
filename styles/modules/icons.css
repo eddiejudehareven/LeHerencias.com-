@@ -10,9 +10,8 @@
 
 }
 .social-media-icons-header {
-	position: relative;
-	top: 3vh;
-	left: 85vw;
+	text-align: center;
+	float: right;
 }
 
 .social-media-icons-footer {

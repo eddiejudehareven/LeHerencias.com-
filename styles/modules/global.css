@@ -5,6 +5,10 @@ body {
 	color: #242424;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 ul li a {
 	text-decoration: none;
 }

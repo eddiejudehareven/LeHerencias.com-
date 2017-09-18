@@ -21,29 +21,26 @@
 	float: left; 
 	width: 33%; 
 }
+
+.column-left img {
+	padding: 20px 40px;
+}
+
 .column-right{ 
 	float: right; 
-	width: 33%; 
-	border-left: 1px solid black;
+	width: 33%;
 }
-.column-center{ 
+.column-centre{ 
 	display: inline-block; 
 	width: 33%; 
-	border-left: 1px solid black; 
 }
 
-/*.row {
-	float: right; 
-}*/
-
-/*[class*='col-'] {
-float: left;
-min-height: 1px; 
-width: 33.3%; 
+.column-centre img {
+	padding: 20px;
 }
 
-[class*='col-'] {
-float: left;
-min-height: 1px; 
-width: 33.3%; 
-}*/
+.column-right img {
+	padding: 20px;
+}
+
+

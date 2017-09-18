@@ -1,16 +1,5 @@
-.hd-search {
+#searchbar {
 	float: left;
-}
-
-.hd-search #searchform {
-position: absolute;
-top: 3vh;
-left: 5vw;
-}
-
-.hd-search label {
- position: absolute;
- left: -9999px;
 }
 
 .hd-search #s {
@@ -22,14 +11,10 @@ left: 5vw;
 	opacity: .3;
 
 }
-
-.hd-search #searchsubmit {
-
-}
-
+/* search icon */
 .fa-search {
 	position: absolute;
-	top: 27px;
+	top: 55px;
 	left: 180px;
 	transform: rotate(100deg);
 }

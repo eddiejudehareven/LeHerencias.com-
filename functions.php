@@ -35,3 +35,23 @@ wp_enqueue_style( 'wpb-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/
  
 add_action( 'wp_enqueue_scripts', 'wpb_load_fa' );
 
+/**
+ Register our sidebars and widgetized areas.
+ */
+function sidebar_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'sidebar-news',
+		'id'            => 'sidebar_news_right_1',
+		'class' 		=> 'news',
+		'description'	=> 'sidebar for the news/blog page',
+		'before_widget' => '<div class="widget-item">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'sidebar_widgets_init' );
+
+
