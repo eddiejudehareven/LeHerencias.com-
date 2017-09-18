@@ -17,4 +17,15 @@
 .social-media-icons-footer {
 	position: relative;
 	left: 65vw;
+	padding-top: 20px;
+}
+
+.social-media-icons-footer a {
+	color: grey;
+	opacity: .8;
+	letter-spacing: 5px;
+
+		&:hover {
+		color: $mainRed;
+}
 }

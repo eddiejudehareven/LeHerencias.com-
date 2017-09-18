@@ -1,36 +1,31 @@
 <?php
 
 get_header(); ?>
-	
-	<!-- wrapper -->
-	<div class="wrapper clearfix">
-		<div id="page" class="gutters">
-		<!-- left column -->
-		<div class="two-col-left">
+
+<!-- wrapper -->
+<div class="wrapper clearfix">
+	<div id="page">
+		<div class="full-width-content">
 			<?php if (have_posts()) :
-				while (have_posts()) : the_post();
+			while (have_posts()) : the_post();
 
 				get_template_part('content-page','page');
 
-				endwhile;
+			endwhile;
 
-				else :
-					echo '<p>No content found</p>';
+		else :
+			echo '<p>No content found</p>';
 
-				endif;
-				?>
-		</div><!-- left column -->
+		endif;
+		?>
 
-		<!-- right column --> 
-		<div class="two-col-right">
-		<!-- <?php get_sidebar(); ?> -->
-		</div> <!-- right column --> 
+	</div> <!-- page-full-width-content --> 
 
-		</div> <!-- page -->
+</div> <!-- page -->
 
-	</div><!-- /wrapper -->
-	
-	<?php get_footer();
+</div><!-- /wrapper -->
+
+<?php get_footer();
 
 ?>
-	</div>
+</div>

@@ -1,25 +1,38 @@
-.grid-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding-top: 30px;
+/* Columns for Front Page */ 
+
+.column-left img {
+	flex: 1; 
+	width: 350px;
+	border: 1px solid grey;
+	border-radius: 1rem 8rem 1rem; 
+
+    &:hover {
+    	width: 355px;
+    }
+
 }
 
-.column-left h2 {
-	flex: 1;
-}
-
-
-.column-centre h2 {
-	flex: 2;
-}
-
-.column-right h2 {
+.column-right img {
 	flex: 3;
-	margin-left: 0;
+	margin-left: 10px;
+	width: 350px;
+	border: 1px solid grey;
+	border-radius: 2rem;
+
+	 &:hover {
+    	opacity: .8;
+    }
 }
 
-.front-page-section {
-	background-color: blue;
+.column-centre img {
+	flex: 2;
+	margin: 10px 0;
+	width: 350px;
+	border: 3px solid black;
+	border-radius: 50%; 
+}
+
+.grid-container h2  {
+	text-align: center;
 }
 

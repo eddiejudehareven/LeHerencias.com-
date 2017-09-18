@@ -1,13 +1,7 @@
-/*.site-footer {
-	overflow: hidden; 
-	background-color: black;
-	padding: .5rem 0; /* so that the margin on the paragraph isn't visibly portruding out of the container div */ 
-	/*width: 100%;
-	}*/
-
 .site-footer {
+	background-color: black;
+	opacity: .8;
 	overflow: hidden;
-	margin: 30px;
 	width: 100%;
 	padding: .5rem 0;
 }
@@ -19,16 +13,22 @@
 	top: 10px;
 	margin-right: 5px;
 	padding-right: 10px;
-	margin-bottom: 10px;
-	border-right: 1px solid black;
+	margin-bottom: 30px;
+	border-right: 1px solid grey;
 }
 
-/*.site-footer nav ul li:first-of-type {
-	border-right: none;
-}*/
+.site-footer a {
+	color: grey;
+
+	&:hover {
+		color: $mainRed;
+		cursor: pointer;
+}
+
+}
 
 .site-footer span {
-	color: $mainRed; 
+	color: grey; 
 	float: left;
 	position: relative;
 	left: 15vw;
@@ -38,6 +38,3 @@
 	padding-bottom: 10px;
 }
 
-	/*div.hd-search {
-		float: right;
-	}*/

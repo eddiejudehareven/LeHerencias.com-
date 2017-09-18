@@ -4,23 +4,16 @@
 
 get_header(); ?>
 	
-	<!-- wrapper -->
+	
+			<?php if (have_posts()) :
+				while (have_posts()) : the_post(); ?>
+
+<!-- wrapper -->
 	<div class="wrapper clearfix">
 		<div id="page" class="gutters">
 		<!-- left column -->
 		<div class="two-col-left">
-			<?php if (have_posts()) :
-				while (have_posts()) : the_post();
-
-				get_template_part('content','page-news');
-
-				endwhile;
-
-				else :
-					echo '<p>No content found</p>';
-
-				endif;
-				?>
+		<h2><?php the_title(); ?></h2>
 		</div><!-- left column -->
 
 		<!-- right column --> 
@@ -28,9 +21,8 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 		</div> <!-- right column --> 
 
-<?php 
-
-					// new column loop begins here
+				<!-- new column loop begins here --> 
+				
 						$newsColumn = new WP_Query('news=55&posts_per_page=3'); // change page ID for each loop
 
 						if ($newsColumn->have_posts()) :
@@ -54,4 +46,5 @@ get_header(); ?>
 	<?php get_footer();
 
 ?>
-	</div>
+		
+<?php 

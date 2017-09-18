@@ -1,9 +1,7 @@
-/*.btn {
-	background-color: yellow;
-	opacity: .8; 
-	color: $mainRed;
+.btn {
 	text-decoration: none;
-	padding: .75rem 1.2rem;
-	display: inline-block;
-	border-radius: 30px;
-}*/
+}
+
+.front-column-btn {
+	font-size: 20px;
+}

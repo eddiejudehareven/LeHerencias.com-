@@ -69,9 +69,7 @@ a:visited {
 
 }
 a:link:hover, a:visited:hover {
-	color: black;/*&:active; { //why does this not work?? 
-		color: blue;
-	}*/
+	color: black;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1em 0;
@@ -111,7 +109,7 @@ p {
 .site-heading h1 a {
 	text-align: center; 
 	text-transform: uppercase;
-	font-size: 6rem;
+	font-size: 5.5rem;
 	opacity: .8;
 	letter-spacing: 10px;
 	color: #91191c; 
@@ -131,7 +129,7 @@ p {
 @media (min-width: 1010px) {
 	.site-nav {
 		opacity: 1;
-		margin: auto;
+		margin: 5px auto;
 		display: inline-block;
 		text-align: center;
 	}
@@ -147,6 +145,10 @@ p {
 	list-style: none;
 	float: left;
 }
+.site-nav ul li.current-menu-item a:link,
+.site-nav ul li.current-menu-item a:visited {
+	color: #91191c;
+}
 .site-nav a {
 	display: block;
 	color: black;
@@ -157,58 +159,54 @@ p {
 }
 .site-nav a:hover {
 	color: #91191c;
+	cursor: pointer;
 }
-/*.site-nav ul li a:link,
-.site-nav ul li a:visited {
-	display: block;
-}*/
-/*.site-nav li { 
-	float: left;
-	display: block;
-	text-align: left;
-	padding-right: 40px; /* space between list items  
-	/*position: relative;
-	top: 50%;*/
-.grid-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	padding-top: 30px;
+@media (min-width: 1010px) {
+	.mobile-navigation {
+		display: none;
+	}
 }
-.column-left h2 {
+/* Columns for Front Page */
+.column-left img {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
-	        flex: 1;
+	        flex: 1; 
+	width: 350px;
+	border: 1px solid grey;
+	border-radius: 1rem 8rem 1rem;
+
 }
-.column-centre h2 {
-	-webkit-box-flex: 2;
-	    -ms-flex: 2;
-	        flex: 2;
+.column-left img:hover {
+	width: 355px;
 }
-.column-right h2 {
+.column-right img {
 	-webkit-box-flex: 3;
 	    -ms-flex: 3;
 	        flex: 3;
-	margin-left: 0;
+	margin-left: 10px;
+	width: 350px;
+	border: 1px solid grey;
+	border-radius: 2rem;
 }
-.front-page-section {
-	background-color: blue;
+.column-right img:hover {
+	opacity: .8;
 }
-/*.site-footer {
-	overflow: hidden; 
-	background-color: black;
-	padding: .5rem 0; /* so that the margin on the paragraph isn't visibly portruding out of the container div */
-/*width: 100%;
-	}*/
+.column-centre img {
+	-webkit-box-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+	margin: 10px 0;
+	width: 350px;
+	border: 3px solid black;
+	border-radius: 50%; 
+}
+.grid-container h2  {
+	text-align: center;
+}
 .site-footer {
+	background-color: black;
+	opacity: .8;
 	overflow: hidden;
-	margin: 30px;
 	width: 100%;
 	padding: .5rem 0;
 }
@@ -219,14 +217,19 @@ p {
 	top: 10px;
 	margin-right: 5px;
 	padding-right: 10px;
-	margin-bottom: 10px;
-	border-right: 1px solid black;
+	margin-bottom: 30px;
+	border-right: 1px solid grey;
 }
-/*.site-footer nav ul li:first-of-type {
-	border-right: none;
-}*/
+.site-footer a {
+	color: grey;
+
+}
+.site-footer a:hover {
+	color: #91191c;
+	cursor: pointer;
+}
 .site-footer span {
-	color: #91191c; 
+	color: grey; 
 	float: left;
 	position: relative;
 	left: 15vw;
@@ -235,12 +238,14 @@ p {
 	padding-right: 10px;
 	padding-bottom: 10px;
 }
-/*div.hd-search {
-		float: right;
-	}*/
 .grid-container {
-        width : 100%;
-        max-width : 1200px; 
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; 
+        -ms-flex-pack: distribute; 
+            justify-content: space-around;
+        padding: 20px;
     }
 .grid-container *{
         box-sizing: border-box; 
@@ -260,31 +265,28 @@ p {
 	width: 33%; 
 }
 .column-left img {
-	padding: 20px 40px;
+	/*padding: 20px 40px;*/
 }
 .column-right{ 
 	float: right; 
 	width: 33%;
+}
+.column-right img {
+	padding: 0px;
 }
 .column-centre{ 
 	display: inline-block; 
 	width: 33%; 
 }
 .column-centre img {
-	padding: 20px;
+	padding: 0px;
 }
-.column-right img {
-	padding: 20px;
-}
-/*.btn {
-	background-color: yellow;
-	opacity: .8; 
-	color: $mainRed;
+.btn {
 	text-decoration: none;
-	padding: .75rem 1.2rem;
-	display: inline-block;
-	border-radius: 30px;
-}*/
+}
+.front-column-btn {
+	font-size: 20px;
+}
 #searchbar {
 	float: left;
 }
@@ -322,19 +324,23 @@ p {
 .social-media-icons-footer {
 	position: relative;
 	left: 65vw;
+	padding-top: 20px;
+}
+.social-media-icons-footer a {
+	color: grey;
+	opacity: .8;
+	letter-spacing: 5px;
+}
+.social-media-icons-footer a:hover {
+	color: #91191c;
 }
 #page { /* add margin between page sections */
 	padding: 1rem 0;
 }
-.gutters {
-	margin-right: -30px;
-}
-/* Content Area */
-article.post a {
-	text-decoration: none;
-}
-article.post:last-of-type {
-	border-bottom: none;
+/* for large screens */
+.full-width-content {
+	width: 100%;
+	margin: 
 }
 
 

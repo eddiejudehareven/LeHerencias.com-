@@ -41,7 +41,6 @@
 
 				<!-- <div id="site-nav-container"> -->
 						<nav class="site-nav">
-
 						<?php
 
 						$args = array(
@@ -52,6 +51,21 @@
 
 						<?php wp_nav_menu(  $args ); ?>
 					</nav> 
+
+					<nav class="mobile-navigation" role="navigation">
+						<button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button></button>
+
+						<?php
+
+						$args = array(
+							'menu' => 'primary menu'
+						);
+
+						?>
+
+						<?php wp_nav_menu(  $args ); ?>
+
+					</nav>
 					
 
 				</header><!-- /site-header -->

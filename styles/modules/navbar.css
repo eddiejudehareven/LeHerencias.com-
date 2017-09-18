@@ -4,7 +4,7 @@
 
 	@mixin atLarge {
 	opacity: 1; 
-	margin: auto;
+	margin: 5px auto;
 	display: inline-block;
 	text-align: center;
 	}
@@ -24,6 +24,11 @@
 	float: left;
 }
 
+.site-nav ul li.current-menu-item a:link,
+.site-nav ul li.current-menu-item a:visited {
+	color: $mainRed;
+}
+
 .site-nav a {
 	display: block;
 	color: black;
@@ -34,20 +39,16 @@
 
 		&:hover {
 		color: $mainRed;
+		cursor: pointer;
 	}
 }
 
-/*.site-nav ul li a:link,
-.site-nav ul li a:visited {
-	display: block;
-}*/
+.mobile-navigation {
 
-/*.site-nav li { 
-	float: left;
-	display: block;
-	text-align: left;
-	padding-right: 40px; /* space between list items  
-	/*position: relative;
-	top: 50%;*/
+	@mixin atLarge {
+		display: none;
+	}
+
+}
 
 

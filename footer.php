@@ -2,7 +2,7 @@
 	<footer class="site-footer">
 
 				<!--outputs AF icon-->
-	<div id="social-media-icons" class="social-media-icons-footer">
+	<div class="social-media-icons-footer">
 	<a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
 	<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
 	<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>

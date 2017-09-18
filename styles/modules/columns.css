@@ -1,6 +1,8 @@
  .grid-container {
-        width : 100%;
-        max-width : 1200px; 
+        display: flex;
+        width: 100%; 
+        justify-content: space-around;
+        padding: 20px;
     }
 .grid-container *{
         box-sizing: border-box; 
@@ -23,12 +25,16 @@
 }
 
 .column-left img {
-	padding: 20px 40px;
+	/*padding: 20px 40px;*/
 }
 
 .column-right{ 
 	float: right; 
 	width: 33%;
+}
+
+.column-right img {
+	padding: 0px;
 }
 .column-centre{ 
 	display: inline-block; 
@@ -36,11 +42,8 @@
 }
 
 .column-centre img {
-	padding: 20px;
+	padding: 0px;
 }
 
-.column-right img {
-	padding: 20px;
-}
 
 

@@ -21,10 +21,6 @@ a:visited {
 	&:hover {
 		color: black;
 
-	/*&:active; { //why does this not work?? 
-		color: blue;
-	}*/
-
 }
 
 }
