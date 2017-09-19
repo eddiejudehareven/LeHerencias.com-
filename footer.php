@@ -9,7 +9,7 @@
 	<a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
 	</div>
 	<!-- outputs AF icon --> 
-
+		<div class="footer-mobile-navigation">
 		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
 
 		<nav>
@@ -25,6 +25,7 @@
 			<?php wp_nav_menu(  $args ); ?>
 		
 		</nav>
+	</div> <!-- footer mobile navigation --> 
 
 	</footer>
 	

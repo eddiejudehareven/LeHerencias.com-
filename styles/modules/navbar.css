@@ -1,6 +1,6 @@
 /* Primary Nav Menu */
 .site-nav {
-	opacity: 0;
+	display: none;
 
 	@mixin atLarge {
 	opacity: 1; 
@@ -30,6 +30,8 @@
 }
 
 .site-nav a {
+
+	@mixin atLarge {
 	display: block;
 	color: black;
 	padding: 10px;
@@ -40,6 +42,7 @@
 		&:hover {
 		color: $mainRed;
 		cursor: pointer;
+		}
 	}
 }
 
@@ -49,6 +52,27 @@
 		display: none;
 	}
 
+}
+
+.mobile-navigation button {
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+	background-color: #FFF;
+}
+
+.mobile-navigation a {
+	display: block;
+	color: black;
+	padding: 10px;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+		&:hover {
+		color: $mainRed;
+		cursor: pointer;
+	}
 }
 
 

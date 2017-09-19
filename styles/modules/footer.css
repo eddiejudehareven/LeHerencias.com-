@@ -38,3 +38,11 @@
 	padding-bottom: 10px;
 }
 
+.footer-mobile-navigation {
+	display: inline-block;
+
+	@mixin atLarge {
+		display: block;
+	}
+}
+

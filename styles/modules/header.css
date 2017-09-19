@@ -20,12 +20,21 @@
 .site-heading h1 a {
 	text-align: center; 
 	text-transform: uppercase;
+	font-size: 2rem;
+	opacity: .8;
+	letter-spacing: 4px;
+	color: $mainRed;
+
+	@mixin atMedium {
+	text-align: center; 
+	text-transform: uppercase;
 	font-size: 5.5rem;
 	opacity: .8;
-	letter-spacing: 10px;
-	color: $mainRed; 
+	letter-spacing: 8px;
+	color: $mainRed;
+	}
+ 
 }
-
 
 .site-header h1 a:link,
 .site-header h1 a:visited {

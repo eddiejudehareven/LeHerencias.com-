@@ -1,20 +1,48 @@
 #searchbar {
 	float: left;
+	max-width: 15%;
+
+	@mixin atSmall {
+	max-width: 10%;
+	}
 }
 
 .hd-search #s {
+	height: 20px;
+	width: 100px;
+	border: none;
+	border: 1px solid grey;
+	border-radius: 1rem;
+	opacity: .3;
+
+	@mixin atMedium {
 	height: 30px;
 	width: 150px;
 	border: none;
 	border: 1px solid grey;
 	border-radius: 1rem;
 	opacity: .3;
+	}
+	
+}
 
+.hd-search {
+	float: left;
+	max-height: 40px;
+}
+
+.hd-search form {
+	position: absolute;
+}
+
+.hd-search label {
+	display: none;
 }
 /* search icon */
-.fa-search {
-	position: absolute;
+.hd-search i {
+	display: none;
+	/*position: absolute;
 	top: 55px;
 	left: 180px;
-	transform: rotate(100deg);
+	transform: rotate(100deg);*/
 }
