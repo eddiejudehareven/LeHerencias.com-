@@ -12,22 +12,25 @@
 
 				<!-- top bar --> 
 	 		<div class="top-bar">
+
+	 			<h5><a href="#">Français</a></h5>
+
 	 				<div class="top-bar-wrap">
+
 				<!--outputs AF icon-->
 				<div id="social-media-icons" class="social-media-icons-header">
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<i class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i><br>
+					<address><a href="mailto:contact@groupeherencias.ca"<i class="fa fa-envelope" aria-hidden="true">&nbsp;contact@groupeherencias.ca</i></a></address>
 				</div> <!-- outputs AF icon --> 
 
-				<!-- hd-search -->
+					<!-- hd-search -->
 				<div id="searchbar">
 				<div class="hd-search">
 					<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 					<?php get_search_form(); ?>
 				</div><!-- /hd-search --> 
 			</div> <!-- searchbar -->
+
 				</div> <!-- top bar wrap --> 
 			</div> <!-- top bar -->
 				
@@ -36,14 +39,16 @@
 
 				<div class="site-heading"><h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 				<!-- <h5><?php bloginfo('description'); ?></h5></div> -->
+
+				<a href="<?php the_field('link-url-left') ?>" class="header-logo"><img src="<?php the_field('image') ?>"></a><br>
 		
 				
-
 				<!-- <div id="site-nav-container"> -->
 						<nav class="site-nav">
 						<?php
 
 						$args = array(
+							'theme_location' => 'primary menu',
 							'menu' => 'primary menu'
 						);
 

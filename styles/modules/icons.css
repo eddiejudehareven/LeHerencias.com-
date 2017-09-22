@@ -1,8 +1,7 @@
 #social-media-icons a {
 	color: black; 
 	cursor: pointer;
-	font-size: 1.1rem;
-	letter-spacing: 5px;
+	text-decoration: none;
 
 	&:hover {
 		color: $mainRed;
@@ -10,22 +9,28 @@
 
 }
 .social-media-icons-header {
+	font-size: 10px;
 	text-align: center;
 	float: right;
+
+	@mixin atMedium {
+	font-size: 14px;
+	text-align: center;
+	float: right;
+	}
 }
 
 .social-media-icons-footer {
+	color: grey;
+	display: inline-block;
+	text-align: center;
+	padding-right: 1rem; 
+
+	@mixin atMedium {
+	color: grey;
 	position: relative;
 	left: 65vw;
 	padding-top: 20px;
+	}
 }
 
-.social-media-icons-footer a {
-	color: grey;
-	opacity: .8;
-	letter-spacing: 5px;
-
-		&:hover {
-		color: $mainRed;
-}
-}

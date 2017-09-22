@@ -13,9 +13,9 @@ get_header(); ?>
 
 	<?php if (have_posts()) :
 
-	while (have_posts()) : the_post();
+	while (have_posts()) : the_post(); ?>
 
-	the_content(); 
+	<?php the_content();  
 
 	endwhile;
 
@@ -23,6 +23,9 @@ get_header(); ?>
 		echo '<p>No content found</p>';
 
 	endif;  ?>
+
+
+</div> <!-- wrapper -->
 
 
 	<!-- grid container -->
@@ -45,10 +48,9 @@ get_header(); ?>
 		<div class="column-right">
 			<h2><a href="#" class="btn front-column-btn">Community Engagement</a></h2>
 			<a href="<?php the_field('link-url-right') ?>"><img src="<?php the_field('image-right') ?>"></a>
-		</div> <!-- column three --> 
+		</div> <!-- column three -->  
 
 	</div> <!-- grid container -->
 
-</div> <!-- wrapper -->
 <?php get_footer( );
 ?>

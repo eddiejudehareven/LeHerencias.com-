@@ -3,11 +3,11 @@
 .column-left img {
 	flex: 1; 
 	width: 350px;
-	border: 1px solid grey;
-	border-radius: 1rem 8rem 1rem; 
+	height: 350px;
+	border: 1px solid black;
 
     &:hover {
-    	width: 355px;
+    	opacity: .8;
     }
 
 }
@@ -16,8 +16,8 @@
 	flex: 3;
 	margin-left: 10px;
 	width: 350px;
-	border: 1px solid grey;
-	border-radius: 2rem;
+	height: 350px;
+	border: 1px solid black;
 
 	 &:hover {
     	opacity: .8;
@@ -28,11 +28,22 @@
 	flex: 2;
 	margin: 10px 0;
 	width: 350px;
-	border: 3px solid black;
-	border-radius: 50%; 
+	height: 350px;
+	border: 1px solid black;
+
+	 &:hover {
+    	opacity: .8;
+    }
 }
 
 .grid-container h2  {
 	text-align: center;
+	text-transform: uppercase;
 }
+
+.single-column-option img {
+	width: 100%;
+}
+
+
 
