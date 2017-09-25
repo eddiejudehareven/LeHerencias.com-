@@ -1,15 +1,88 @@
  .grid-container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        @mixin atMedium {
         display: flex;
         width: 100%; 
-        justify-content: space-around;
-        align-items: flex-start;
-        padding: 20px;
+        margin: 0 auto;
+        }
 
     }
 .grid-container *{
         box-sizing: border-box; 
     }
-    
+
+.grid-container h2  {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.grid-container a {
+	font-size: 14px;
+	text-decoration: none;
+
+	@mixin atMedium {
+		font-size: 20px;
+		text-decoration: none;
+	}
+}
+
+.grid-container img {
+	width: 100%;
+	border: 1px solid black;
+
+	@mixin atMedium {
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	border: 1px solid black;
+	}
+
+	@mixin atLarge {
+	width: 350px;
+	height: 350px;
+	margin: 10px;
+	border: 1px solid black;
+	}
+}
+
+/* Columns for Front Page */ 
+.column-left {
+	width: 100%; 
+	margin-bottom: 10px;
+
+	@mixin atMedium {
+	width: 33.333%; 
+	height: 100%;
+	flex: 1; 
+	}  
+}
+
+.column-right { 
+	width: 100%;
+	margin-bottom: 10px; 
+
+	@mixin atMedium {
+	width: 33.333%;
+	height: 100%;
+	flex: 3;
+	} 
+}
+
+.column-centre { 
+	width: 100%; 
+	margin-bottom: 10px;
+	
+	@mixin atMedium {
+	width: 33.333%; 
+	height: 100%;
+	flex: 2;
+	}
+}
+
 /* columns for pages */ 
 .two-col-left {  
 	float: left;
@@ -20,32 +93,3 @@
 	float: right;
 	width: 33.33%;
 }
-/* Columns for Front Page */ 
-.column-left{ 
-	float: left; 
-	width: 33%; 
-}
-
-.column-left img {
-	/*padding: 20px 40px;*/
-}
-
-.column-right{ 
-	float: right; 
-	width: 33%;
-}
-
-.column-right img {
-	padding: 0px;
-}
-.column-centre{ 
-	display: inline-block; 
-	width: 33%; 
-}
-
-.column-centre img {
-	padding: 0px;
-}
-
-
-

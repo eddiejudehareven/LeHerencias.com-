@@ -9,12 +9,23 @@ function addAssets() { // resources: any css or js files //
 
 // Loading JS Navigation 
 function addNavigation() {
-	wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
+	wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . './js/navigation.js', array('jquery'), '20160909', true );
 }
 
 // add_action allows us to fire certain functions on events we specify
 // in this case, we fire our custom function addAssets on the wp_enqueue_scripts hook (which fires when user loads page)
 add_action('wp_enqueue_scripts', 'addAssets');
+
+// Registering of Menus to Theme // 
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'primary menu' => __( 'primary menu' ),
+      'footer menu' => __( 'footer menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
 //Fonts
 function wpb_add_google_fonts() {
@@ -59,11 +70,11 @@ function sidebar_widgets_init() {
 }
 add_action( 'widgets_init', 'sidebar_widgets_init' );
 
-//Get Top Ancestor for Primary Sub Menu
+// Get Top Ancestor for Primary Sub Menu
 function get_top_ancestor_id() {
 
 if ($post->post_parent) {
-	$ancestors =(get_post_ancestors($post->ID));
+	$ancestors = array_reverse(get_post_ancestors($post->ID));
 	return $ancestors [0];
 }
 

@@ -1,5 +1,5 @@
 ( function() {
-    var nav = document.getElementById( 'mobile-navigation' ), button, menu;
+    var nav = document.getElementById( 'site-nav' ), button, menu;
     if ( ! nav ) {
         return;
     }

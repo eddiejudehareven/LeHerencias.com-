@@ -183,9 +183,6 @@ p {
 	border-bottom: 5px solid #91191c; 
 }
 /* Primary Nav Menu */
-.site-nav {
-	display: none;
-}
 @media (min-width: 1010px) {
 	.site-nav {
 		opacity: 1;
@@ -209,6 +206,18 @@ p {
 .site-nav ul li.current-menu-item a:visited {
 	color: #91191c;
 }
+.site-nav a {
+	display: block;
+	color: black;
+	padding: 10px;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.site-nav a:hover {
+	color: #91191c;
+	cursor: pointer;
+}
 @media (min-width: 1010px) {
 	.site-nav a {
 		display: block;
@@ -223,73 +232,13 @@ p {
 		cursor: pointer;
 	}
 }
-@media (min-width: 1010px) {
-	.mobile-navigation {
-		display: none;
-	}
-}
-.mobile-navigation button {
+.site-nav button {
 	border: none;
 	font-size: 25px;
 	cursor: pointer;
 	background-color: #FFF;
 }
-.mobile-navigation a {
-	display: block;
-	color: black;
-	padding: 10px;
-	font-size: 10px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-.mobile-navigation a:hover {
-	color: #91191c;
-	cursor: pointer;
-}
-/* Columns for Front Page */
-.column-left img {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1; 
-	width: 350px;
-	height: 350px;
-	border: 1px solid black;
-
-}
-.column-left img:hover {
-	opacity: .8;
-}
-.column-right img {
-	-webkit-box-flex: 3;
-	    -ms-flex: 3;
-	        flex: 3;
-	margin-left: 10px;
-	width: 350px;
-	height: 350px;
-	border: 1px solid black;
-}
-.column-right img:hover {
-	opacity: .8;
-}
-.column-centre img {
-	-webkit-box-flex: 2;
-	    -ms-flex: 2;
-	        flex: 2;
-	margin: 10px 0;
-	width: 350px;
-	height: 350px;
-	border: 1px solid black;
-}
-.column-centre img:hover {
-	opacity: .8;
-}
-.grid-container h2  {
-	text-align: center;
-	text-transform: uppercase;
-}
-.single-column-option img {
-	width: 100%;
-}
+/* CSS for Front Page */
 .site-footer {
 	background-color: black;
 	opacity: .8;
@@ -332,21 +281,98 @@ p {
 	padding-bottom: 10px;
 }
 .grid-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%; 
-        -ms-flex-pack: distribute; 
-            justify-content: space-around;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
         padding: 20px;
 
     }
+@media (min-width: 700px) {
+	.grid-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 .grid-container *{
         box-sizing: border-box; 
     }
+.grid-container h2  {
+	text-align: center;
+	text-transform: uppercase;
+}
+.grid-container a {
+	font-size: 14px;
+	text-decoration: none;
+}
+@media (min-width: 700px) {
+	.grid-container a {
+		font-size: 20px;
+		text-decoration: none;
+	}
+}
+.grid-container img {
+	width: 100%;
+	border: 1px solid black;
+}
+@media (min-width: 700px) {
+	.grid-container img {
+		width: 250px;
+		height: 250px;
+		margin: 10px;
+		border: 1px solid black;
+	}
+}
+@media (min-width: 1010px) {
+	.grid-container img {
+		width: 350px;
+		height: 350px;
+		margin: 10px;
+		border: 1px solid black;
+	}
+}
+/* Columns for Front Page */
+.column-left {
+	width: 100%; 
+	margin-bottom: 10px;  
+}
+@media (min-width: 700px) {
+	.column-left {
+		width: 33.333%;
+		height: 100%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+}
+.column-right { 
+	width: 100%;
+	margin-bottom: 10px; 
+}
+@media (min-width: 700px) {
+	.column-right {
+		width: 33.333%;
+		height: 100%;
+		-webkit-box-flex: 3;
+		    -ms-flex: 3;
+		        flex: 3;
+	}
+}
+.column-centre { 
+	width: 100%; 
+	margin-bottom: 10px;
+}
+@media (min-width: 700px) {
+	.column-centre {
+		width: 33.333%;
+		height: 100%;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2;
+		        flex: 2;
+	}
+}
 /* columns for pages */
 .two-col-left {  
 	float: left;
@@ -356,34 +382,7 @@ p {
 	float: right;
 	width: 33.33%;
 }
-/* Columns for Front Page */
-.column-left{ 
-	float: left; 
-	width: 33%; 
-}
-.column-left img {
-	/*padding: 20px 40px;*/
-}
-.column-right{ 
-	float: right; 
-	width: 33%;
-}
-.column-right img {
-	padding: 0px;
-}
-.column-centre{ 
-	display: inline-block; 
-	width: 33%; 
-}
-.column-centre img {
-	padding: 0px;
-}
-.btn {
-	text-decoration: none;
-}
-.front-column-btn {
-	font-size: 20px;
-}
+/* buttons */
 #searchbar {
 	float: left;
 	max-width: 15%;

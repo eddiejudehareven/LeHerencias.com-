@@ -25,9 +25,6 @@ get_header(); ?>
 	endif;  ?>
 
 
-</div> <!-- wrapper -->
-
-
 	<!-- grid container -->
 	<div class="grid-container">
 
@@ -51,6 +48,8 @@ get_header(); ?>
 		</div> <!-- column three -->  
 
 	</div> <!-- grid container -->
+
+</div> <!-- wrapper -->
 
 <?php get_footer( );
 ?>
