@@ -2,28 +2,19 @@
 	float: left;
 	max-width: 15%;
 
-	@mixin atSmall {
-	max-width: 10%;
-	}
+	/*@mixin atSmall {
+	display: none;
+	}*/
 }
 
 .hd-search #s {
-	height: 20px;
-	width: 100px;
-	border: none;
-	border: 1px solid grey;
-	border-radius: 1rem;
-	opacity: .3;
-
-	@mixin atMedium {
+	position: relative;
 	height: 30px;
 	width: 150px;
 	border: none;
 	border: 1px solid grey;
 	border-radius: 1rem;
-	opacity: .3;
-	}
-	
+	opacity: .3;	
 }
 
 .hd-search {
@@ -32,17 +23,9 @@
 }
 
 .hd-search form {
-	position: absolute;
-}
+	display: none;
 
-.hd-search label {
-	display: none;
-}
-/* search icon */
-.hd-search i {
-	display: none;
-	/*position: absolute;
-	top: 55px;
-	left: 180px;
-	transform: rotate(100deg);*/
+	@mixin atLarge {
+	position: absolute;
+	}
 }

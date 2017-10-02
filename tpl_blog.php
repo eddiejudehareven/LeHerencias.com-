@@ -1,10 +1,12 @@
-<?php
-
 /*
-Template Name: Special Layout
+Template Name: Blog Posts
 */
 
+<?php
+
 get_header(); ?>
+
+<?php query_posts('post_type=post&post_status=publish&posts_per_page=10&paged='. get_query_var('paged')); ?>
 
 <!-- wrapper -->
 <div class="wrapper clearfix">
@@ -13,16 +15,19 @@ get_header(); ?>
 			<?php if (have_posts()) :
 			while (have_posts()) : the_post();
 
-				get_template_part('content');
+				get_template_part('content'); ?>
 
-			endwhile;
+			<?php endwhile; ?>
 
-		else :
+				<div class="blog-navigation">
+		<span class="newer"><?php previous_posts_link(__('« Newer','example')) ?></span> <span class="older"><?php next_posts_link(__('Older »','example')) ?></span>
+		</div><!-- /.navigation -->
+
+		<?php else :
 			echo '<p>No content found</p>';
 
 		endif;
 		?>
-
 	</div> <!-- two-col-left -->
 
 		<!-- right column --> 

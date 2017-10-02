@@ -30,6 +30,7 @@ get_header(); ?>
 
 		<!-- column one --> 
 		<div class="column-left">
+			<!-- create div around h2 in order to enforce min height -->
 			<h2><a href="#" class="btn front-column-btn">Professional Production</a></h2>
 			<a href="<?php the_field('link-url-left') ?>"><img src="<?php the_field('image-left') ?>"></a>
 		</div> <!-- column one --> 

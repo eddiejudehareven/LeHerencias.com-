@@ -10,6 +10,10 @@
 	margin: 0 auto 0;
 }
 
+.top-bar address {
+	display: inline;
+}
+
 .top-bar h5 a {
 	float: right;
 	padding-right: 10px;
@@ -37,24 +41,6 @@
 	}
 
 }
-/*
-.mobile-translation-link h5 a {
-	float: right;
-	padding-top: 10px;
-	padding-right: 30px;
-	text-decoration: none;
-	color: black;
-
-	&:hover {
-		color: $mainRed;
-		cursor: pointer;
-
-	@mixin atLarge {
-		display: none;
-	}
-}
-
-}*/
 
 .site-header {
 	background-color: ;
@@ -66,9 +52,9 @@
 .site-heading h1 a {
 	text-align: center; 
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	opacity: .8;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: $mainRed;
 
 	@mixin atMedium {
@@ -77,6 +63,7 @@
 	font-size: 3rem;
 	opacity: .8;
 	letter-spacing: 6px;
+	padding-top: 20px;
 	color: $mainRed;
 	}
 
@@ -92,6 +79,6 @@
 }
 
 #metaslider {
-	border-top: 5px solid $mainRed;
-	border-bottom: 5px solid $mainRed; 
+	border-top: 2px solid $mainRed;
+	border-bottom: 2px solid $mainRed; 
 }

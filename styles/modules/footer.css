@@ -4,11 +4,20 @@
 	overflow: hidden;
 	width: 100%;
 	padding: .5rem 0;
+	text-align: center;
+
+	@mixin atMedium {
+		/*display: inline-block;*/
+	}
 }
 
 .site-footer nav ul li {
 	display: inline-block;
-	text-align: center;
+	/*text-align: center;*/
+	margin-bottom: 30px;
+	border-right: 1px solid grey;
+	margin-right: 5px;
+	padding-right: 10px;
 
 	@mixin atMedium {
 	position: relative;
@@ -33,13 +42,34 @@
 }
 
 .site-footer span {
+	display: block;
 	color: grey; 
-	/*float: left;*/
-	/*position: relative;*/
 	left: 15vw;
 	bottom: 5px;
-	margin-right: 5px;
+	margin: 30px; 
+
+	@mixin atMedium {
+	display: block;
+	color: grey; 
+	margin: 20px;
 	padding-right: 10px;
-	padding-bottom: 10px;
+	float: left;
+	}
 }
 
+.mailing-list {
+	color: grey;
+	padding: 30px;
+
+	@mixin atMedium {
+		float: left;
+	}
+}
+
+.footer-menu {
+	float: none;
+
+	@mixin atMedium {
+		float: left;
+	}
+}

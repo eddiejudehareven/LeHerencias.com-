@@ -1,5 +1,6 @@
 /* Primary Nav Menu */
 .site-nav {
+	display: none;
 
 	@mixin atLarge {
 	opacity: 1; 
@@ -56,13 +57,30 @@
 	}
 }
 
-.site-nav button {
-	border: none;
-	font-size: 25px;
-	cursor: pointer;
-	background-color: #FFF;
+.sub-menu {
+	display: none;
+	position: absolute;
+    z-index: 9;
+    background: white;
 }
 
+.sub-menu.visible {
+	display: block;
+}
 
+.sub-menu li {
+	float: none !important;
+}
 
+/* Mobile Nav Styling Begins */ 
+
+ button#responsive-menu-button {
+ 	border-radius: 3px;
+	opacity: .8;
+	cursor: pointer;
+ }
+
+li.responsive-menu-item .responsive-menu-item-link {
+	text-transform: uppercase;
+}
 
