@@ -1,3 +1,9 @@
+<?php 
+/*
+* Template Name: Blog Post
+*/
+?>
+
 <?php
 
 get_header(); ?>
@@ -23,13 +29,13 @@ get_header(); ?>
 				endif;
 				?>
 
+		<?php get_sidebar(); ?>
+
 		</div><!-- /main-column -->
 
 	</wrapper> <!-- wrapper -->
 
 		</div><!-- /site-content -->
-
-		<?php get_sidebar(); ?>
 		
 	
 	<?php get_footer();

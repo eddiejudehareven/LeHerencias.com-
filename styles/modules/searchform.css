@@ -1,11 +1,6 @@
-#searchbar {
+/*#searchbar {
 	float: left;
-	max-width: 15%;
-
-	/*@mixin atSmall {
-	display: none;
-	}*/
-}
+}*/
 
 .hd-search #s {
 	position: relative;
@@ -18,14 +13,17 @@
 }
 
 .hd-search {
-	float: left;
-	max-height: 40px;
-}
-
-.hd-search form {
 	display: none;
 
 	@mixin atLarge {
-	position: absolute;
+	display: block;
+	float: left;
+	max-height: 40px;
 	}
+}
+
+input#searchsubmit {
+	background: none;
+	border: .5px solid grey;
+	border-radius: 8px;
 }

@@ -28,8 +28,6 @@
 
 	@mixin atMedium {
 	color: grey;
-	position: relative;
-	/*left: 65vw;*/
 	padding-top: 20px;
 	float: right;
 	}

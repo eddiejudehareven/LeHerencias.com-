@@ -226,12 +226,17 @@ p {
 	position: absolute;
     z-index: 9;
     background: white;
+    border: 1px solid black;
 }
 .sub-menu.visible {
 	display: block;
 }
 .sub-menu li {
 	float: none !important;
+	border-bottom: 1px solid grey;
+}
+.sub-menu li:last-of-type {
+	border-bottom: none;
 }
 /* Mobile Nav Styling Begins */
 button#responsive-menu-button {
@@ -240,39 +245,22 @@ button#responsive-menu-button {
 	cursor: pointer;
  }
 li.responsive-menu-item .responsive-menu-item-link {
-	text-transform: uppercase;
+	text-transform: uppercase; 
 }
+/*#responsive-menu li.responsive-menu-item .responsive-menu-item-link {
+	padding: 0 15%;
+}*/
 /* CSS for Front Page */
 .site-footer {
+	display: inline-block;
+	width: 100%;
 	background-color: black;
 	opacity: .8;
 	overflow: hidden;
-	width: 100%;
 	padding: .5rem 0;
-	text-align: center;
-}
-@media (min-width: 700px) {
-	.site-footer {/*display: inline-block;*/
-	}
 }
 .site-footer nav ul li {
-	display: inline-block;
-	/*text-align: center;*/
-	margin-bottom: 30px;
-	border-right: 1px solid grey;
-	margin-right: 5px;
-	padding-right: 10px;
-}
-@media (min-width: 700px) {
-	.site-footer nav ul li {
-		position: relative;
-		left: 18vw;
-		top: 10px;
-		margin-right: 5px;
-		padding-right: 10px;
-		margin-bottom: 30px;
-		border-right: 1px solid grey;
-	}
+	
 }
 .site-footer a {
 	color: grey;
@@ -284,37 +272,15 @@ li.responsive-menu-item .responsive-menu-item-link {
 	cursor: pointer;
 }
 .site-footer span {
-	display: block;
-	color: grey; 
-	left: 15vw;
-	bottom: 5px;
-	margin: 30px;
-}
-@media (min-width: 700px) {
-	.site-footer span {
-		display: block;
-		color: grey;
-		margin: 20px;
-		padding-right: 10px;
-		float: left;
-	}
+	float: left;
 }
 .mailing-list {
 	color: grey;
 	padding: 30px;
-}
-@media (min-width: 700px) {
-	.mailing-list {
-		float: left;
-	}
+	float: left;
 }
 .footer-menu {
-	float: none;
-}
-@media (min-width: 700px) {
-	.footer-menu {
-		float: left;
-	}
+
 }
 .grid-container {
         display: block;
@@ -340,7 +306,7 @@ li.responsive-menu-item .responsive-menu-item-link {
 	text-transform: uppercase;
 }
 .grid-container a {
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 1px;
 	text-decoration: none;
 }
@@ -354,6 +320,9 @@ li.responsive-menu-item .responsive-menu-item-link {
 .grid-container img {
 	width: 100%;
 	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
 }
 .grid-container img::hover {
 	opacity: 0.5;
@@ -423,14 +392,9 @@ li.responsive-menu-item .responsive-menu-item-link {
 	width: 33.33%;
 }*/
 /* buttons */
-#searchbar {
+/*#searchbar {
 	float: left;
-	max-width: 15%;
-
-	/*@mixin atSmall {
-	display: none;
-	}*/
-}
+}*/
 .hd-search #s {
 	position: relative;
 	height: 30px;
@@ -441,16 +405,19 @@ li.responsive-menu-item .responsive-menu-item-link {
 	opacity: .3;	
 }
 .hd-search {
-	float: left;
-	max-height: 40px;
-}
-.hd-search form {
 	display: none;
 }
 @media (min-width: 1010px) {
-	.hd-search form {
-		position: absolute;
+	.hd-search {
+		display: block;
+		float: left;
+		max-height: 40px;
 	}
+}
+input#searchsubmit {
+	background: none;
+	border: .5px solid grey;
+	border-radius: 8px;
 }
 #social-media-icons a {
 	color: black; 
@@ -484,7 +451,6 @@ li.responsive-menu-item .responsive-menu-item-link {
 @media (min-width: 700px) {
 	.social-media-icons-footer {
 		color: grey;
-		position: relative;/*left: 65vw;*/
 		padding-top: 20px;
 		float: right;
 	}

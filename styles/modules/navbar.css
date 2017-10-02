@@ -62,6 +62,7 @@
 	position: absolute;
     z-index: 9;
     background: white;
+    border: 1px solid black;
 }
 
 .sub-menu.visible {
@@ -70,6 +71,11 @@
 
 .sub-menu li {
 	float: none !important;
+	border-bottom: 1px solid grey;
+}
+
+.sub-menu li:last-of-type {
+	border-bottom: none;
 }
 
 /* Mobile Nav Styling Begins */ 
@@ -81,6 +87,9 @@
  }
 
 li.responsive-menu-item .responsive-menu-item-link {
-	text-transform: uppercase;
+	text-transform: uppercase; 
 }
 
+/*#responsive-menu li.responsive-menu-item .responsive-menu-item-link {
+	padding: 0 15%;
+}*/
