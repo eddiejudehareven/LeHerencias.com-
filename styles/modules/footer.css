@@ -1,14 +1,14 @@
 .site-footer {
-	display: inline-block;
+	display: flex;
 	width: 100%;
 	background-color: black;
-	opacity: .8;
+	opacity: .7;
 	overflow: hidden;
 	padding: .5rem 0;
 }
 
-.site-footer nav ul li {
-	
+.site-footer ul li {
+	padding-right: 5px;
 }
 
 .site-footer a {
@@ -22,17 +22,40 @@
 
 }
 
-.site-footer span {
-	float: left;
-}
-
-
 .mailing-list {
 	color: grey;
-	padding: 30px;
-	float: left;
+	margin-left: 120px;
+	border-right: 2px dotted grey;
+	margin-right: 60px;
 }
 
-.footer-menu {
+.mailing-list input {
 
+	position: inherit;
+	height: 40px;
+	width: 190px;
+	bottom: 10px;
+	border: 10px;
 }
+
+#mc-embedded-subscribe {
+	text-transform: uppercase;
+	width: 140px;
+}
+
+.clear {
+	padding-left: 25px;
+}
+
+.footer-menu span {
+color: grey; 
+font-size: 15px;
+position: relative;
+top: 50px;
+}
+
+.footer-menu nav {
+	
+}
+
+

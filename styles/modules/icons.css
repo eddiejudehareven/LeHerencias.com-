@@ -22,24 +22,32 @@
 
 .social-media-icons-footer {
 	color: grey;
-	display: inline-flex;
 	text-align: center;
 	margin: 10px;
 
 	@mixin atMedium {
 	color: grey;
-	padding-top: 20px;
-	float: right;
 	}
 }
 
+.social-media-icons-footer address {
+	display: inline;
+}
+
 #social-media-icons-footer a {
+	margin: 10px;
 	padding: 10px;
-	font-size: 20px;
+	border: 1px solid grey;
+	border-radius: 50%;
+
+
+		&:hover {
+		color: $mainRed;
+}
 }
 
 #phone-icon {
-	font-size: 20px;
+	font-size: 16px;
 	padding-top: 10px;
 	padding-left: 1.8px;
 }

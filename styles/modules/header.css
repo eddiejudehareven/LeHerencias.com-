@@ -73,6 +73,10 @@
  
 }
 
+.site-heading img {
+	max-height: 150px;
+}
+
 .site-header h1 a:link,
 .site-header h1 a:visited {
 	text-decoration: none;

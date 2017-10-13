@@ -160,6 +160,9 @@ p {
 		font-size: 4.5rem;
 	}
 }
+.site-heading img {
+	max-height: 150px;
+}
 .site-header h1 a:link,
 .site-header h1 a:visited {
 	text-decoration: none;
@@ -252,15 +255,17 @@ li.responsive-menu-item .responsive-menu-item-link {
 }*/
 /* CSS for Front Page */
 .site-footer {
-	display: inline-block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	width: 100%;
 	background-color: black;
-	opacity: .8;
+	opacity: .7;
 	overflow: hidden;
 	padding: .5rem 0;
 }
-.site-footer nav ul li {
-	
+.site-footer ul li {
+	padding-right: 5px;
 }
 .site-footer a {
 	color: grey;
@@ -271,16 +276,35 @@ li.responsive-menu-item .responsive-menu-item-link {
 	color: #91191c;
 	cursor: pointer;
 }
-.site-footer span {
-	float: left;
-}
 .mailing-list {
 	color: grey;
-	padding: 30px;
-	float: left;
+	margin-left: 120px;
+	border-right: 2px dotted grey;
+	margin-right: 60px;
 }
-.footer-menu {
+.mailing-list input {
 
+	position: inherit;
+	height: 40px;
+	width: 190px;
+	bottom: 10px;
+	border: 10px;
+}
+#mc-embedded-subscribe {
+	text-transform: uppercase;
+	width: 140px;
+}
+.clear {
+	padding-left: 25px;
+}
+.footer-menu span {
+color: grey; 
+font-size: 15px;
+position: relative;
+top: 50px;
+}
+.footer-menu nav {
+	
 }
 .grid-container {
         display: block;
@@ -294,6 +318,8 @@ li.responsive-menu-item .responsive-menu-item-link {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -442,25 +468,28 @@ input#searchsubmit {
 }
 .social-media-icons-footer {
 	color: grey;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
 	text-align: center;
 	margin: 10px;
 }
 @media (min-width: 700px) {
 	.social-media-icons-footer {
 		color: grey;
-		padding-top: 20px;
-		float: right;
 	}
 }
+.social-media-icons-footer address {
+	display: inline;
+}
 #social-media-icons-footer a {
+	margin: 10px;
 	padding: 10px;
-	font-size: 20px;
+	border: 1px solid grey;
+	border-radius: 50%;
+}
+#social-media-icons-footer a:hover {
+	color: #91191c;
 }
 #phone-icon {
-	font-size: 20px;
+	font-size: 16px;
 	padding-top: 10px;
 	padding-left: 1.8px;
 }
@@ -471,6 +500,31 @@ input#searchsubmit {
 .full-width-content {
 	width: 100%;
 	margin: 
+}
+.main-column {
+	width: 100%;
+	margin-bottom: 10px; 
+}
+@media (min-width: 700px) {
+	.main-column {
+		width: 66.666%;
+		height: 100%;
+	}
+}
+/*.side-bar-column {
+	width: 100%;
+	margin-bottom: 10px; 
+
+	@mixin atMedium {
+	float: right; 
+	width: 33.333%;
+	height: 100%;
+	} 
+}*/
+#sidebar_news_right_1 {
+	float: right;
+	width: 33.3333%;
+	height: 100%;
 }
 
 

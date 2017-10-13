@@ -1,20 +1,11 @@
 	
 	<footer class="site-footer">
 
-		<div class="wrapper"> 
+		<div class="grid-container"> 
 
-		<!--outputs AF icon-->
-	<div id="social-media-icons-footer" class="social-media-icons-footer">
-		<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-		<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-		<address><a href="mailto:contact@groupeherencias.ca"<i class="fa fa-envelope" aria-hidden="true">&nbsp;</i></a></address>
-		<i id="phone-icon" class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i>
-	</div>
-
-
-	<!-- mailing list sign up -->
-
-    		<div class="mailing-list">
+				<!-- mailing list sign up -->
+<div class="column-centre">
+    			<div class="mailing-list">
 					<h3 class="mailing-list__title">Subscribe to our Newsletter</h3>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
@@ -34,14 +25,16 @@
 							<div class="clear"><input type="submit" value="Submit" name="submit" id="mc-embedded-subscribe" class=""></div>
 						</div>
 					</form>
-				</div>
+				</div> <!-- mailing list --> 
+			</div> <!-- mailing-list div -->
+		</div>
 
 <!--End mc_embed_signup-->
 
 	<!-- outputs AF icon -->
-		<nav class="footer-menu">
-		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
-
+	<div class="column-left">
+		<div class="footer-menu">
+		<nav>
 		
 			<?php
 			
@@ -54,8 +47,22 @@
 			<?php wp_nav_menu(  $args ); ?>
 		
 		</nav>
+		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
+	</div> <!-- footer-menu -->
+</div>
 
-		</div> <!-- wrapper --> 
+		<!--outputs AF icon-->
+	<div class="column-right">
+	<div id="social-media-icons-footer" class="social-media-icons-footer">
+		<h3>Follow Us</h3>
+		<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+		<address><a href="mailto:contact@groupeherencias.ca"<i class="fa fa-envelope" aria-hidden="true">&nbsp;</i></address></a>
+		<i id="phone-icon" class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i>
+	</div>
+</div>
+
+		</div> <!-- grid-container --> 
 
 	</footer>
 	
