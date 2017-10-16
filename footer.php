@@ -1,7 +1,7 @@
 	
 	<footer class="site-footer">
 
-		<div class="grid-container"> 
+		<div class="grid-container">
 
 				<!-- mailing list sign up -->
 <div class="column-centre">
@@ -35,7 +35,7 @@
 	<div class="column-left">
 		<div class="footer-menu">
 		<nav>
-		
+			<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
 			<?php
 			
 			$args = array(
@@ -47,7 +47,7 @@
 			<?php wp_nav_menu(  $args ); ?>
 		
 		</nav>
-		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
+	
 	</div> <!-- footer-menu -->
 </div>
 
@@ -61,7 +61,6 @@
 		<i id="phone-icon" class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i>
 	</div>
 </div>
-
 		</div> <!-- grid-container --> 
 
 	</footer>

@@ -2,18 +2,28 @@
 	display: flex;
 	width: 100%;
 	background-color: black;
-	opacity: .7;
+	opacity: .9;
 	overflow: hidden;
 	padding: .5rem 0;
 }
 
 .site-footer ul li {
-	padding-right: 5px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+
+	@mixin atLarge {
+	padding-right: 50px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+	}
 }
 
 .site-footer a {
 	color: grey;
 	text-decoration: none;
+	font-size: 14px;
 
 	&:hover {
 		color: $mainRed;
@@ -24,9 +34,7 @@
 
 .mailing-list {
 	color: grey;
-	margin-left: 120px;
-	border-right: 2px dotted grey;
-	margin-right: 60px;
+	text-align: center;
 }
 
 .mailing-list input {
@@ -47,15 +55,22 @@
 	padding-left: 25px;
 }
 
-.footer-menu span {
-color: grey; 
-font-size: 15px;
-position: relative;
-top: 50px;
+.site-footer span {
+	color: grey; 
+	font-size: 15px;
+	position: relative;
+	top: 115px;
+
+	@mixin atLarge {
+	color: grey; 
+	font-size: 15px;
+	padding-right: 50px;
+	}
 }
 
-.footer-menu nav {
-	
+.footer-menu {
+	text-align: center;
 }
+
 
 

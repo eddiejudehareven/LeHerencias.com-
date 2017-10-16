@@ -161,7 +161,7 @@ p {
 	}
 }
 .site-heading img {
-	max-height: 150px;
+	max-height: 100px;
 }
 .site-header h1 a:link,
 .site-header h1 a:visited {
@@ -260,16 +260,27 @@ li.responsive-menu-item .responsive-menu-item-link {
 	display: flex;
 	width: 100%;
 	background-color: black;
-	opacity: .7;
+	opacity: .9;
 	overflow: hidden;
 	padding: .5rem 0;
 }
 .site-footer ul li {
-	padding-right: 5px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+@media (min-width: 1010px) {
+	.site-footer ul li {
+		padding-right: 50px;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-size: 10px;
+	}
 }
 .site-footer a {
 	color: grey;
 	text-decoration: none;
+	font-size: 14px;
 
 }
 .site-footer a:hover {
@@ -278,9 +289,7 @@ li.responsive-menu-item .responsive-menu-item-link {
 }
 .mailing-list {
 	color: grey;
-	margin-left: 120px;
-	border-right: 2px dotted grey;
-	margin-right: 60px;
+	text-align: center;
 }
 .mailing-list input {
 
@@ -297,14 +306,21 @@ li.responsive-menu-item .responsive-menu-item-link {
 .clear {
 	padding-left: 25px;
 }
-.footer-menu span {
-color: grey; 
-font-size: 15px;
-position: relative;
-top: 50px;
+.site-footer span {
+	color: grey; 
+	font-size: 15px;
+	position: relative;
+	top: 115px;
 }
-.footer-menu nav {
-	
+@media (min-width: 1010px) {
+	.site-footer span {
+		color: grey;
+		font-size: 15px;
+		padding-right: 50px;
+	}
+}
+.footer-menu {
+	text-align: center;
 }
 .grid-container {
         display: block;
@@ -317,9 +333,8 @@ top: 50px;
 	.grid-container {
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+		display: flex;/*flex-wrap: wrap;
+*/
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -332,13 +347,12 @@ top: 50px;
 	text-transform: uppercase;
 }
 .grid-container a {
-	font-size: 14px;
+	/*font-size: 14px;*/
 	letter-spacing: 1px;
 	text-decoration: none;
 }
 @media (min-width: 700px) {
-	.grid-container a {
-		font-size: 18px;
+	.grid-container a {/*font-size: 18px;*/
 		letter-spacing: 1px;
 		text-decoration: none;
 	}
@@ -346,8 +360,8 @@ top: 50px;
 .grid-container img {
 	width: 100%;
 	border: 1px solid black;
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 350px;
 	margin: 10px;
 }
 .grid-container img::hover {
@@ -379,7 +393,8 @@ top: 50px;
 /* Columns for Front Page */
 .column-left {
 	width: 100%; 
-	margin-bottom: 10px;  
+	margin-bottom: 10px;
+	text-align: center;  
 }
 @media (min-width: 700px) {
 	.column-left {
@@ -390,6 +405,7 @@ top: 50px;
 .column-right { 
 	width: 100%;
 	margin-bottom: 10px; 
+	text-align: center; 
 }
 @media (min-width: 700px) {
 	.column-right {
@@ -400,6 +416,7 @@ top: 50px;
 .column-centre { 
 	width: 100%; 
 	margin-bottom: 10px;
+	text-align: center;
 }
 @media (min-width: 700px) {
 	.column-centre {

@@ -6,8 +6,8 @@
 
         @mixin atMedium {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%; 
+        /*flex-wrap: wrap;
+*/        width: 100%; 
         margin: 0 auto;
         }
 
@@ -22,12 +22,12 @@
 }
 
 .grid-container a {
-	font-size: 14px;
+	/*font-size: 14px;*/
 	letter-spacing: 1px;
 	text-decoration: none;
 
 	@mixin atMedium {
-		font-size: 18px;
+		/*font-size: 18px;*/
 		letter-spacing: 1px;
 		text-decoration: none;
 	}
@@ -36,8 +36,8 @@
 .grid-container img {
 	width: 100%;
 	border: 1px solid black;
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 350px;
 	margin: 10px;
 
 	&::hover {
@@ -74,6 +74,7 @@
 .column-left {
 	width: 100%; 
 	margin-bottom: 10px;
+	text-align: center;
 
 	@mixin atMedium {
 	width: 33.333%; 
@@ -84,6 +85,7 @@
 .column-right { 
 	width: 100%;
 	margin-bottom: 10px; 
+	text-align: center;
 
 	@mixin atMedium {
 	width: 33.333%;
@@ -94,6 +96,7 @@
 .column-centre { 
 	width: 100%; 
 	margin-bottom: 10px;
+	text-align: center;
 	
 	@mixin atMedium {
 	width: 33.333%; 
