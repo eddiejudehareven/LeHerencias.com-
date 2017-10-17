@@ -1,10 +1,16 @@
 /* Content Area */
 .post-container {
+	width: 100%;
+
+	@mixin atMedium {
 	display: flex;
-	max-width: 1250px;
+	max-width: 850px;
+	margin: 0 auto;
+	}
 }
 
 .main-column {
+	width: 100%
 
 	@mixin atMedium {
 	width: 66.666%;
@@ -13,7 +19,7 @@
 }
 
 .blog-page-title {
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .post-container h2 {
