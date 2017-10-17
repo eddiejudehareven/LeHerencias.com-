@@ -38,17 +38,16 @@
 }
 
 .mailing-list input {
-
-	position: inherit;
 	height: 40px;
 	width: 190px;
-	bottom: 10px;
-	border: 10px;
+	border: 2px solid #91191c;
 }
 
 #mc-embedded-subscribe {
 	text-transform: uppercase;
 	width: 140px;
+	border: none;
+	margin-right: 25px;
 }
 
 .clear {

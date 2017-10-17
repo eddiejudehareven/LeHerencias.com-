@@ -1,4 +1,6 @@
-<!-- <?php
+<!-- is this for single post pages? --> 
+
+<?php
 
 get_header(); ?>
 
@@ -28,4 +30,4 @@ get_header(); ?>
 
 <?php get_footer();
 
-?> -->
+?> 

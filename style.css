@@ -292,16 +292,15 @@ li.responsive-menu-item .responsive-menu-item-link {
 	text-align: center;
 }
 .mailing-list input {
-
-	position: inherit;
 	height: 40px;
 	width: 190px;
-	bottom: 10px;
-	border: 10px;
+	border: 2px solid #91191c;
 }
 #mc-embedded-subscribe {
 	text-transform: uppercase;
 	width: 140px;
+	border: none;
+	margin-right: 25px;
 }
 .clear {
 	padding-left: 25px;
@@ -518,9 +517,17 @@ input#searchsubmit {
 	width: 100%;
 	margin: 
 }
-.main-column {
-	width: 100%;
-	margin-bottom: 10px; 
+#sidebar_news_right_1 {
+	float: right;
+	width: 33.3333%;
+	height: 100%;
+}
+/* Content Area */
+.post-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 1250px;
 }
 @media (min-width: 700px) {
 	.main-column {
@@ -528,20 +535,75 @@ input#searchsubmit {
 		height: 100%;
 	}
 }
-/*.side-bar-column {
-	width: 100%;
-	margin-bottom: 10px; 
+.blog-page-title {
+	font-size: 35px;
+}
+.post-container h2 {
+	font-size: 18px;
+}
+article.post {
+	border-bottom: 1px dotted #DDD;
+	margin-bottom: 20px;
+}
+article.post:last-of-type {
+	border-bottom: none;
+}
+article.post-link {
+	font-size: 125%;
+	padding: 20px 20px 1px 20px;
+	border-bottom: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+.mini-meta {
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+	display: block;
+}
+.mini-meta a {
+	color: #777;
+	text-decoration: none;
+}
+/* Link Post Format Styles 
+article.post-link {
+	background-color: #E0EBFF;
+	padding: 0;
+}
 
-	@mixin atMedium {
-	float: right; 
-	width: 33.333%;
-	height: 100%;
-	} 
-}*/
-#sidebar_news_right_1 {
-	float: right;
-	width: 33.3333%;
-	height: 100%;
+article.post-link a {
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.post-link-text {
+	line-height: 1.65em;
+	color: #004982;
+}
+
+/* Gallery Post Format Styles */
+article.post-gallery {
+	background-color: #222;
+	color: #FFF;
+	padding: 20px;
+	border-bottom: none;
+}
+article.post-gallery .gallery img {
+	border: none!important;
+}
+article.post-gallery .wp-caption-text {
+	font-size: 86%;
+}
+article.post-gallery h2 {
+	text-align: center;
+}
+article.post-gallery h2 a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 130%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 

@@ -1,4 +1,25 @@
 /* Content Area */
+.post-container {
+	display: flex;
+	max-width: 1250px;
+}
+
+.main-column {
+
+	@mixin atMedium {
+	width: 66.666%;
+	height: 100%;
+	} 
+}
+
+.blog-page-title {
+	font-size: 35px;
+}
+
+.post-container h2 {
+	font-size: 18px;
+}
+
 article.post {
 	border-bottom: 1px dotted #DDD;
 	margin-bottom: 20px;
@@ -28,7 +49,7 @@ article.post-link {
 	text-decoration: none;
 }
 
-/* Link Post Format Styles */
+/* Link Post Format Styles 
 article.post-link {
 	background-color: #E0EBFF;
 	padding: 0;
