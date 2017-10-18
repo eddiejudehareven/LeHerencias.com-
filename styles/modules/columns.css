@@ -7,7 +7,7 @@
         @mixin atMedium {
         display: flex;
         /*flex-wrap: wrap;
-*/        width: 100%; 
+*/       width: 100%; 
         margin: 0 auto;
         }
 
@@ -36,18 +36,12 @@
 .grid-container img {
 	width: 100%;
 	border: 1px solid black;
-	width: 350px;
-	height: 350px;
-	margin: 10px;
 
 	&::hover {
 		opacity: 0.5;
 	}
 
 	@mixin atMedium {
-	width: 250px;
-	height: 250px;
-	margin: 10px;
 	border: 1px solid black;
 
 	&:hover {
@@ -58,9 +52,6 @@
 	}
 
 	@mixin atLarge {
-	width: 350px;
-	height: 350px;
-	margin: 10px;
 	border: 1px solid black;
 
 	&::hover {
@@ -73,7 +64,7 @@
 /* Columns for Front Page */ 
 .column-left {
 	width: 100%; 
-	margin-bottom: 10px;
+	padding: 10px;
 	text-align: center;
 
 	@mixin atMedium {
@@ -84,7 +75,7 @@
 
 .column-right { 
 	width: 100%;
-	margin-bottom: 10px; 
+	padding: 10px; 
 	text-align: center;
 
 	@mixin atMedium {
@@ -95,7 +86,7 @@
 
 .column-centre { 
 	width: 100%; 
-	margin-bottom: 10px;
+	padding: 10px;
 	text-align: center;
 	
 	@mixin atMedium {

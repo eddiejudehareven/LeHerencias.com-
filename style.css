@@ -359,18 +359,12 @@ li.responsive-menu-item .responsive-menu-item-link {
 .grid-container img {
 	width: 100%;
 	border: 1px solid black;
-	width: 350px;
-	height: 350px;
-	margin: 10px;
 }
 .grid-container img::hover {
 	opacity: 0.5;
 }
 @media (min-width: 700px) {
 	.grid-container img {
-		width: 250px;
-		height: 250px;
-		margin: 10px;
 		border: 1px solid black;
 	}
 	.grid-container img:hover {
@@ -380,9 +374,6 @@ li.responsive-menu-item .responsive-menu-item-link {
 }
 @media (min-width: 1010px) {
 	.grid-container img {
-		width: 350px;
-		height: 350px;
-		margin: 10px;
 		border: 1px solid black;
 	}
 	.grid-container img::hover {
@@ -392,7 +383,7 @@ li.responsive-menu-item .responsive-menu-item-link {
 /* Columns for Front Page */
 .column-left {
 	width: 100%; 
-	margin-bottom: 10px;
+	padding: 10px;
 	text-align: center;  
 }
 @media (min-width: 700px) {
@@ -403,7 +394,7 @@ li.responsive-menu-item .responsive-menu-item-link {
 }
 .column-right { 
 	width: 100%;
-	margin-bottom: 10px; 
+	padding: 10px; 
 	text-align: center; 
 }
 @media (min-width: 700px) {
@@ -414,7 +405,7 @@ li.responsive-menu-item .responsive-menu-item-link {
 }
 .column-centre { 
 	width: 100%; 
-	margin-bottom: 10px;
+	padding: 10px;
 	text-align: center;
 }
 @media (min-width: 700px) {
@@ -517,6 +508,9 @@ input#searchsubmit {
 	width: 100%;
 	margin: 
 }
+#sidebar_news_right_1 div {
+	width: 200px;
+}
 .widget-item {
 	margin-bottom: 20px;
 	border-radius: 5px;
@@ -575,7 +569,12 @@ input#searchsubmit {
 	height: 100%;
 }
 .blog-page-title {
-	font-size: 30px;
+	font-size: 20px;
+}
+@media (min-width: 700px) {
+	.blog-page-title {
+		font-size: 30px;
+	}
 }
 .post-container h2 {
 	font-size: 18px;
@@ -604,45 +603,15 @@ article.post-link {
 	color: #777;
 	text-decoration: none;
 }
-/* Link Post Format Styles 
-article.post-link {
-	background-color: #E0EBFF;
-	padding: 0;
+.wp-embedded-content {
+	width:100% !important;
+	min-height:270px !important;
 }
-
-article.post-link a {
-	display: block;
-	text-decoration: none;
-	padding: 20px;
-}
-
-.post-link-text {
-	line-height: 1.65em;
-	color: #004982;
-}
-
-/* Gallery Post Format Styles */
-article.post-gallery {
-	background-color: #222;
-	color: #FFF;
-	padding: 20px;
-	border-bottom: none;
-}
-article.post-gallery .gallery img {
-	border: none!important;
-}
-article.post-gallery .wp-caption-text {
-	font-size: 86%;
-}
-article.post-gallery h2 {
-	text-align: center;
-}
-article.post-gallery h2 a {
-	color: #FFF;
-	text-decoration: none;
-	font-size: 130%;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+@media (min-width: 700px) {
+	.wp-embedded-content {
+		min-height: 270px !important;
+		width: 90% !important;
+	}
 }
 
 

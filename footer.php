@@ -9,7 +9,7 @@
 					<h3 class="mailing-list__title">Subscribe to our Newsletter</h3>
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
-					<form action="<!-- //eddiejude.us15.list-manage.com/subscribe/post?u=ededb7e20c7658a52f1d02987&amp;id=0a9a068b5a" method="post" id="mc-embedded-subscribe-form -->" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="<!-- //eddiejude.us15.list-manage.com/subscribe/post?u=ededb7e20c7658a52f1d02987&amp;id=0a9a068b5a -->" method="post" id="mc-embedded-subscribe-form -->" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 							<div class="mc-field-group">
 								<p><input type="text" name="MMERGE1" class="mailing-list__name" placeholder="Your Name"></p>
@@ -35,7 +35,6 @@
 	<div class="column-left">
 		<div class="footer-menu">
 		<nav>
-			<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
 			<?php
 			
 			$args = array(
@@ -45,6 +44,8 @@
 			?>
 			
 			<?php wp_nav_menu(  $args ); ?>
+
+			<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span>
 		
 		</nav>
 	
