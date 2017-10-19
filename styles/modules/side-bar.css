@@ -1,5 +1,17 @@
 #sidebar_news_right_1 div {
+	width: 100%;
+
+	@mixin atMedium {
 	width: 200px;
+	}
+}
+
+.side-bar {
+	margin-left: 0px;
+
+	@mixin atMedium {
+		margin-left: 30px;
+	}
 }
 
 .widget-item {

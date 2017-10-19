@@ -67,7 +67,7 @@
 	<div id="credits">
 		<div class="wrapper">
 			<div class="inner-container">
-		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span></div> <!-- credits -->
+		<span><?php bloginfo('name'); ?> &copy; <?php echo date('Y');?></span></div> <!-- copyright -->
 		</div> <!-- inner container --> 
 	</div> <!-- wrapper -->
 	

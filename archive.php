@@ -6,11 +6,14 @@
 
 get_header(); ?>
 
+<div class="wrapper">
+
 	<!-- site-content -->
-	<div class="site-content clearfix">
+	<div class="post-container clearfix">
 		
 		<!-- main-column -->
 		<div class="main-column">
+
 			
 			<?php
 			
@@ -56,8 +59,14 @@ get_header(); ?>
 			
 		</div><!-- /main-column -->
 		
+		<div class="side-bar">
 		<?php get_sidebar(); ?>
+	</div>
 		
-	</div><!-- /site-content -->
+	</div><!-- /post-container -->
+
+		</div> <!-- wrapper -->
 
 <?php get_footer();
+
+?>

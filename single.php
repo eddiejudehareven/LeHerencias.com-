@@ -12,7 +12,7 @@ get_header(); ?>
 			while (have_posts()) : the_post(); ?>
 
 
-				<?php get_template_part('content-page','page');
+				<?php get_template_part('content-page','page'); 
 
 			endwhile;
 

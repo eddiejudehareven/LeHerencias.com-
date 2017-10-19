@@ -1,8 +1,9 @@
-<!-- <?php
+<?php
 
 get_header(); ?>
 
-<!-- wrapper -->
+<!-- wrapper --> 
+
 <div class="wrapper clearfix">
 	<div id="page">
 		<div class="full-width-content">
@@ -28,4 +29,4 @@ get_header(); ?>
 
 <?php get_footer();
 
-?> -->
+?> 
