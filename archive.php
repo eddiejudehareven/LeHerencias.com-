@@ -1,6 +1,6 @@
 <?php
 
- /* what is between this & endwhile = content would be repeated on every blog post */
+/* what is between this & endwhile = content would be repeated on every blog post */
 /* index.php targets the home page/blog page */ 
 //anything in the loop will get repeated for every post // 
 
@@ -23,49 +23,49 @@ get_header(); ?>
 
 				<h2><?php
 
-					if ( is_category() ) {
-						single_cat_title();
-					} elseif ( is_tag() ) {
-						single_tag_title();
-					} elseif ( is_author() ) {
-						the_post();
-						echo 'Author Archives: ' . get_the_author();
-						rewind_posts();
-					} elseif ( is_day() ) {
-						echo 'Daily Archives: ' . get_the_date();
-					} elseif ( is_month() ) {
-						echo 'Monthly Archives: ' . get_the_date('F Y');
-					} elseif ( is_year() ) {
-						echo 'Yearly Archives: ' . get_the_date('Y');
-					} else {
-						echo 'Archives:';
-					}
+				if ( is_category() ) {
+					single_cat_title();
+				} elseif ( is_tag() ) {
+					single_tag_title();
+				} elseif ( is_author() ) {
+					the_post();
+					echo 'Author Archives: ' . get_the_author();
+					rewind_posts();
+				} elseif ( is_day() ) {
+					echo 'Daily Archives: ' . get_the_date();
+				} elseif ( is_month() ) {
+					echo 'Monthly Archives: ' . get_the_date('F Y');
+				} elseif ( is_year() ) {
+					echo 'Yearly Archives: ' . get_the_date('Y');
+				} else {
+					echo 'Archives:';
+				}
 
 				?></h2>
 
 				<?php
 				while (have_posts()) : the_post();
 
-				the_content();
+					the_content();
 
 				endwhile;
 
-				else :
-					echo '<p>No content found</p>';
+			else :
+				echo '<p>No content found</p>';
 
-				endif;
+			endif;
 			
 			?>
 			
 		</div><!-- /main-column -->
 		
 		<div class="side-bar">
-		<?php get_sidebar(); ?>
-	</div>
+			<?php get_sidebar(); ?>
+		</div>
 		
 	</div><!-- /post-container -->
 
-		</div> <!-- wrapper -->
+</div> <!-- wrapper -->
 
 <?php get_footer();
 

@@ -2,6 +2,7 @@
 	<html <?php language_attributes(); ?>>
 		<head>
 			<meta charset="<?php bloginfo('charset'); ?>"> <!-- character set -->
+			<meta name="description" content="<?php bloginfo('description'); ?>" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- responsiveness // add scale -->
 			<title><?php bloginfo('name'); ?></title>
 			<?php wp_head(); ?> <!-- wp plugins --> 

@@ -37,11 +37,9 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 	</div>
 
-		</div><!-- /main-column -->
-
 	</div> <!-- /post container -->	
 
-	</wrapper> <!-- wrapper -->
+	</div> <!-- wrapper -->
 
 	
 	<?php get_footer();

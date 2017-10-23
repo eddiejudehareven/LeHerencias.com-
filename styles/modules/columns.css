@@ -41,7 +41,8 @@
 
 	@mixin atMedium {
 	border: 1px solid black;
-
+	width: 100%;
+	max-height: 300px;
 	&:hover {
 		opacity: 0.5;
 		cursor: pointer;
@@ -51,6 +52,8 @@
 
 	@mixin atLarge {
 	border: 1px solid black;
+	width: 100%;
+	max-height: 300px;
 
 	&::hover {
 		opacity: 0.5;

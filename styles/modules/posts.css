@@ -1,16 +1,22 @@
 /* Content Area */
 .post-container {
 	width: 100%;
+	overflow: hidden;
 
 	@mixin atMedium {
 	display: flex;
 	max-width: 850px;
 	margin: 0 auto;
+	overflow: hidden;
 	}
 }
 
+.post-container h2 {
+	font-size: 18px;
+}
+
 .main-column {
-	width: 100%
+	width: 100%;
 
 	@mixin atMedium {
 	width: 66.666%;
@@ -24,10 +30,6 @@
 	@mixin atMedium {
 	font-size: 30px;
 	}
-}
-
-.post-container h2 {
-	font-size: 18px;
 }
 
 article.post {
