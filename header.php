@@ -47,6 +47,7 @@
 				
 				<!-- <div id="site-nav-container"> -->
 						<nav class="site-nav" role="navigation">
+							<div clas="menu-toggle"></div>
 						<?php
 
 						$args = array(
