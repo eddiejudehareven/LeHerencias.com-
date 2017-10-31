@@ -21,9 +21,10 @@
 				<!--outputs AF icon-->
 				<div id="social-media-icons" class="social-media-icons-header">
 					<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
 					<address><a href="mailto:contact@groupeherencias.ca"<i class="fa fa-envelope" aria-hidden="true">&nbsp;</i></a></address><br>
-					<i class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i>
+					<a href="tel:+1-514-919-2775"><i id="phone-icon" class="fa fa-phone" aria-hidden="true">&nbsp;(514) 919-2775</i></a>
 				</div> <!-- outputs AF icon --> 
 
 					<!-- hd-search -->

@@ -49,7 +49,7 @@ article.post-link {
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
 }
 
-article.post img {
+/*article.post img {
 	width: 100%;
 	height: auto;
 
@@ -57,7 +57,7 @@ article.post img {
 		width: 50%;
 		height: auto;
 	}
-}
+}*/
 
 .mini-meta {
 	font-size: 68%;

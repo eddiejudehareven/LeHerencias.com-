@@ -27,30 +27,7 @@ function register_my_menus() {
     )
   );
 }
-add_action( 'init', 'register_my_menus' );
-
-// List Child Pages
-
-// function wpb_list_child_pages() { 
- 
-// global $post; 
- 
-// if ( is_page() && $post->post_parent )
- 
-//     $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
-// else
-//     $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
- 
-// if ( $childpages ) {
- 
-//     $string = '<ul>' . $childpages . '</ul>';
-// }
- 
-// return $string;
- 
-// }
- 
-// add_shortcode('wpb_childpages', 'wpb_list_child_pages'); 
+add_action( 'init', 'register_my_menus' ); 
 
 //Fonts
 function wpb_add_google_fonts() {
@@ -95,4 +72,32 @@ function sidebar_widgets_init() {
 }
 add_action( 'widgets_init', 'sidebar_widgets_init' );
 
+// Function to get archives list with limited months // shortcode used in sidebar 'text' widget
+function wpb_limit_archives() { 
+ 
+$my_archives = wp_get_archives(array(
+    'type'=>'monthly', 
+    'limit'=>12,
+    'echo'=>0
+));
+     
+return $my_archives; 
+ 
+} 
+ 
+// Create a shortcode
+add_shortcode('wpb_custom_archives', 'wpb_limit_archives'); 
+ 
+// Enable shortcode execution in text widget
+add_filter('widget_text', 'do_shortcode'); 
 
+// limiting number of tags in tag cloud widget
+add_filter('widget_tag_cloud_args', 'limit_tag_in_tag_cloud_widget');
+
+function limit_tag_in_tag_cloud_widget($args){
+if(isset($args['taxonomy']) && $args['taxonomy'] == 'post_tag'){
+$args['number'] = 10; //Limit number of tags
+}
+
+return $args;
+}

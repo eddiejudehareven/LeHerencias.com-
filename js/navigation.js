@@ -1,8 +1,14 @@
 jQuery( document ).ready(function() {
-    jQuery(".menu-item-has-children").hover(function() {
+    jQuery(".menu-item").hover(function() {
         jQuery(this).find('.sub-menu').toggleClass("visible");
     });
 });
+
+// jQuery( document ).ready(function() {
+//     jQuery(".menu-item li").hover(function() {
+//         jQuery(this).find('.sub-menu ul > li').toggleClass(".child");
+//     });
+// });
 
 // if .menu-item-has-children has a li then we want to add its own visible class which floats 
 //child sub menu item to the right 

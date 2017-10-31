@@ -34,7 +34,7 @@
 	display: inline;
 }
 
-#social-media-icons-footer a {
+#social-media-icons-footer i {
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid grey;
@@ -48,6 +48,6 @@
 
 #phone-icon {
 	font-size: 16px;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-left: 1.8px;
 }

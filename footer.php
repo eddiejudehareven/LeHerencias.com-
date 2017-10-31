@@ -55,9 +55,10 @@
 	<div id="social-media-icons-footer" class="social-media-icons-footer">
 		<h3>Follow Us</h3>
 		<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
 		<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-		<address><a href="mailto:contact@groupeherencias.ca"<i class="fa fa-envelope" aria-hidden="true">&nbsp;</i></address></a>
-		<i id="phone-icon" class="fa fa-phone" aria-hidden="true">&nbsp;(111) 111-1111</i>
+		<address><a href="mailto:contact@groupeherencias.ca"><i class="fa fa-envelope fa-lg" aria-hidden="true">&nbsp;</i></a></address>
+		<a href="tel:+1-514-919-2775"><i id="phone-icon" class="fa fa-phone" aria-hidden="true"></i></a>
 	</div>
 </div>
 		</div> <!-- grid-container --> 
