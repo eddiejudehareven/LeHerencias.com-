@@ -1,6 +1,6 @@
 jQuery( document ).ready(function() {
     jQuery(".menu-item").hover(function() {
-        jQuery(this).find('.sub-menu').toggleClass("visible");
+        jQuery(this).children('.sub-menu').toggleClass("visible");
     });
 });
 

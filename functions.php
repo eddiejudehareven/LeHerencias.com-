@@ -6,17 +6,11 @@ function addAssets() { // resources: any css or js files //
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/navigation.js', array('jquery'));
 	// adding various functionality to your theme all go in this function 
 }
-
-
-// Loading JS Navigation 
-// function addNavigation() {
-// 	wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . './js/navigation.js', array('jquery'), '20160909', true );
-// }
-
-
 // add_action allows us to fire certain functions on events we specify
+
 // in this case, we fire our custom function addAssets on the wp_enqueue_scripts hook (which fires when user loads page)
 add_action('wp_enqueue_scripts', 'addAssets');
+
 
 // Registering of Menus to Theme // 
 function register_my_menus() {
@@ -36,14 +30,6 @@ wp_enqueue_style( 'wpb-google-fonts', "https://fonts.googleapis.com/css?family=R
 }
  
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
-
-// //404 Not Found 
-// get_search_form('echo', 'string');
-
-// // // Create Slider Post Type
-// require( get_template_directory() . '/slider/slider_post_type.php' );
-// // Create Slider
-// require( get_template_directory() . '/slider/slider.php' );
 
 function wpb_load_fa() {
  
@@ -101,3 +87,11 @@ $args['number'] = 10; //Limit number of tags
 
 return $args;
 }
+
+/* Stylesheet for the Visual Editor */ 
+
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'styles/modules/editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+// add_editor_style( array( 'styles/modules/editor-style.css') );

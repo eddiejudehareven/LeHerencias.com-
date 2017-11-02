@@ -1,8 +1,11 @@
 #page { /* add margin between page sections */
 	padding: 1rem 0;
 }
-/* for large screens */
+/* Default Full Width */
 .full-width-content {
 	width: 100%;
 	margin: 
 }
+
+/* Two Column Page */ 
+

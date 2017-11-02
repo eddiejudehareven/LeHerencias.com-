@@ -65,18 +65,9 @@
     border: 1px solid black;
 }
 
+
 .sub-menu.visible {
 	display: block;
-}
-
-.sub-menu ul > li {
-	display: none;
-}
-
-.sub-menu:hover ul > li {
-	right: 0px;
-	display: block;
-	transform: translate(100%);
 }
 
 .sub-menu li {
@@ -84,8 +75,18 @@
 	border-bottom: 1px solid grey;
 }
 
+.sub-menu .sub-menu {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
 .sub-menu li:last-of-type {
 	border-bottom: none;
+}
+
+.menu-item-has-children {
+	position: relative;
 }
 
 /* Mobile Nav Styling Begins  */

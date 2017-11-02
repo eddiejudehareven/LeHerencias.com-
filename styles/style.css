@@ -22,5 +22,6 @@ Tags: one, two
 @import "modules/page";
 @import "modules/side-bar";
 @import "modules/posts";
+@import "modules/editor-style";
 
 
