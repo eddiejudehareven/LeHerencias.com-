@@ -14,6 +14,10 @@
 	}
 }
 
+.side-bar ul {
+	list-style: none;
+}
+
 .widget-item {
 	margin-bottom: 20px;
 	border-radius: 5px;
